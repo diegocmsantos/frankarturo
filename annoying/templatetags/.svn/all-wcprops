@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/88/frankarturo/annoying/templatetags
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/88/frankarturo/annoying/templatetags/__init__.py
+END
+annoying.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/88/frankarturo/annoying/templatetags/annoying.py
+END
+smart_if.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/88/frankarturo/annoying/templatetags/smart_if.py
+END

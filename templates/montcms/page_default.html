@@ -1,0 +1,10 @@
+{% extends "montcms/section_default.html" %}
+
+{% block body_class %}{{ section.url_name }}{% endblock %}
+
+{% block content %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.created_at|date:"D d M Y" }}</p>
+
+    <p>{{ page.content|safe }}</p>
+{% endblock %}

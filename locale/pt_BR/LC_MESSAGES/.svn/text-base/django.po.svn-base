@@ -1,0 +1,596 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-12 19:47-0300\n"
+"PO-Revision-Date: 2010-10-12 19:47-0300\n"
+"Last-Translator: Nicholas Amorim <nicholas@montrealdevelopment.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\settings.py:10
+msgid "Portuguese (Brazil)"
+msgstr "Português (Brasil)"
+
+#: .\settings.py:11
+msgid "English (U.S.A.)"
+msgstr "Inglês (E.U.A.)"
+
+#: .\settings.py:69
+msgid "obesity"
+msgstr "obesidade"
+
+#: .\settings.py:70
+msgid "tips"
+msgstr "dicas"
+
+#: .\settings.py:71
+msgid "surgeries"
+msgstr "cirurgias"
+
+#: .\settings.py:72
+msgid "articles"
+msgstr "artigos"
+
+#: .\montcms\admin.py:20
+msgid "Advanced options"
+msgstr "Opções Avançadas"
+
+#: .\montcms\forms.py:22
+msgid "There is already a main page within this section"
+msgstr "Já existe uma página principal nesta seção"
+
+#: .\montcms\forms.py:30
+msgid "There is already a page with this Page ID"
+msgstr "Já existe uma página com esse ID"
+
+#: .\montcms\models.py:21
+msgid "Name"
+msgstr "Nome"
+
+#: .\montcms\models.py:22
+#: .\montcms\models.py:59
+msgid "Slug"
+msgstr "Slug"
+
+#: .\montcms\models.py:23
+#: .\montcms\models.py:62
+msgid "Page ID"
+msgstr "ID da Página"
+
+#: .\montcms\models.py:24
+#: .\montcms\models.py:60
+msgid "Appears in navigation menus and lists ?"
+msgstr "Aparece nos menus de navegação e índices ?"
+
+#: .\montcms\models.py:25
+#: .\montcms\models.py:61
+msgid "Is active ?"
+msgstr "Está ativo ?"
+
+#: .\montcms\models.py:25
+#: .\montcms\models.py:61
+msgid "If unchecked, it will not be visible by anyone, neither will appear in menus and link lists."
+msgstr "Se inativo, não será visível por ninguém, tampouco aparecerá nos menus e lista de links."
+
+#: .\montcms\models.py:26
+#: .\montcms\models.py:49
+msgid "Order"
+msgstr "Ordem"
+
+#: .\montcms\models.py:27
+#: .\montcms\models.py:66
+msgid "Template Name"
+msgstr "Modelo"
+
+#: .\montcms\models.py:28
+#: .\montcms\models.py:65
+msgid "User needs to be logged to see this page"
+msgstr "Usuário precisa estar logado para acessar"
+
+#: .\montcms\models.py:28
+msgid "If checked, unlogged users will not be able to see this entire section."
+msgstr "Se marcado, usuários não logados não pdoerão ver esta seção inteira."
+
+#: .\montcms\models.py:29
+msgid "The root of this page is a index ?"
+msgstr "A raiz dessa página é um índice ?"
+
+#: .\montcms\models.py:29
+msgid "If checked, the root of this page will display a link list of this section pages"
+msgstr "Se marcado, esta seção irá mostrar uma lista de links para as páginas dela."
+
+#: .\montcms\models.py:36
+#: .\montcms\models.py:56
+msgid "Section"
+msgstr "Seção"
+
+#: .\montcms\models.py:37
+msgid "Sections"
+msgstr "Seções"
+
+#: .\montcms\models.py:48
+msgid "Not specified"
+msgstr "Não especificado"
+
+#: .\montcms\models.py:57
+msgid "Title"
+msgstr "Título"
+
+#: .\montcms\models.py:58
+msgid "Created at"
+msgstr "Criado em:"
+
+#: .\montcms\models.py:59
+msgid "Usually you will not need to set this manually. But if you need, remember: slug is unique within pages."
+msgstr "Normalmente você não precisará fazer nada nesse campo. Mas caso precise, lembre-se: slug é único entre as páginas."
+
+#: .\montcms\models.py:63
+msgid "Image"
+msgstr "Imagem"
+
+#: .\montcms\models.py:64
+msgid "Content"
+msgstr "Conteúdo"
+
+#: .\montcms\models.py:65
+msgid "If checked, unlogged users will not be able to see this single page."
+msgstr "Se marcado, usuários que não estão logados não poderão ver esta página."
+
+#: .\montcms\models.py:67
+msgid "Is this the main page of its section ?"
+msgstr "Esta é a página principal da seção ?"
+
+#: .\montcms\models.py:67
+msgid "When the root of this page is not a index, it will show the main page. A section can have only one main page."
+msgstr "Quando a raiz dessa página não for um índice, irá mostrar a página principal. Uma seção pode conter somente uma página principal;"
+
+#: .\montcms\models.py:74
+msgid "Page"
+msgstr "Página"
+
+#: .\montcms\models.py:75
+msgid "Pages"
+msgstr "Páginas"
+
+#: .\mylovelymontreal\forms.py:7
+msgid "Request"
+msgstr "Solicitação"
+
+#: .\mylovelymontreal\forms.py:8
+msgid "Bug"
+msgstr "Problema"
+
+#: .\mylovelymontreal\forms.py:12
+msgid "Please, select a priority"
+msgstr "Por favor, selecione uma prioridade"
+
+#: .\mylovelymontreal\forms.py:13
+msgid "I can't access my website!"
+msgstr "Eu não consigo acessar meu site!"
+
+#: .\mylovelymontreal\forms.py:14
+msgid "Han.. there is something wrong with X"
+msgstr "Hum.. tem algo de errado com X"
+
+#: .\mylovelymontreal\forms.py:15
+msgid "Something is missing!"
+msgstr "Algo está faltando!"
+
+#: .\mylovelymontreal\forms.py:16
+msgid "I need to change some things."
+msgstr "Eu preciso mudar algumas coisas."
+
+#: .\mylovelymontreal\forms.py:17
+msgid "Can I change only this paragraph to red ?"
+msgstr "Posso mudar só esse parágrafo para vermelho ?"
+
+#: .\mylovelymontreal\forms.py:21
+msgid "Blocker"
+msgstr "Emergência"
+
+#: .\mylovelymontreal\forms.py:22
+msgid "Critical"
+msgstr "Crítica"
+
+#: .\mylovelymontreal\forms.py:23
+msgid "Major"
+msgstr "Alta"
+
+#: .\mylovelymontreal\forms.py:24
+msgid "Minor"
+msgstr "Baixa"
+
+#: .\mylovelymontreal\forms.py:25
+msgid "Trivial"
+msgstr "Trivial"
+
+#: .\mylovelymontreal\forms.py:36
+msgid "Type:"
+msgstr "Tipo:"
+
+#: .\mylovelymontreal\forms.py:37
+msgid "Priority:"
+msgstr "Prioridade:"
+
+#: .\mylovelymontreal\forms.py:38
+msgid "Summary:"
+msgstr "Sumário:"
+
+#: .\mylovelymontreal\forms.py:39
+msgid "Your message:"
+msgstr "Sua mensagem:"
+
+#: .\mylovelymontreal\forms.py:40
+msgid "Attachment (optional):"
+msgstr "Anexo (opcional):"
+
+#: .\mylovelymontreal\forms.py:44
+#, python-format
+msgid "Montreal - Request Ticket #%s"
+msgstr "Montreal - Requisição #%s"
+
+#: .\mylovelymontreal\forms.py:49
+#, python-format
+msgid ""
+"\n"
+"            You have submitted us a ticket request. Below is a copy of all the information you provided us:\n"
+"            \n"
+"            Type: %(type)s\n"
+"            Priority: %(priority)s (%(real_priority)s)\n"
+"            Summary: %(summary)s\n"
+"            Message: %(message)s\n"
+"            \n"
+"            Thank you.\n"
+"            Montreal.\n"
+"            \n"
+"        "
+msgstr ""
+"\n"
+"           Você nos enviou uma requisição. Abaixo segue uma cópia automática de todas as informações que você preencheu:\n"
+"             \n"
+"            Tipo: %(type)s\n"
+"            Prioridade: %(priority)s (%(real_priority)s)\n"
+"            Sumário: %(summary)s\n"
+"            Mensagem: %(message)s\n"
+"            \n"
+"            Obrigado.\n"
+"            Montreal.\n"
+"            \n"
+"        "
+
+#: .\mylovelymontreal\templates\mylovelymontreal\form.html.py:3
+msgid "Open an request"
+msgstr "Abrir uma requisição"
+
+#: .\mylovelymontreal\templates\mylovelymontreal\form.html.py:12
+msgid "Choose request when you need to add or change something. Pick bug when there's likely to be a problem in your website."
+msgstr "Escolha 'Solicitação' quando você precisar adicionar ou mudar algo. Escolha 'Problema' quando muito provavelmente é um problema em seu site."
+
+#: .\mylovelymontreal\templates\mylovelymontreal\form.html.py:21
+msgid "We ask you to don't misuse this priority selection. This is how we organize ourselves to provide you a great service."
+msgstr "Pedimos que não selecione a prioridade de forma indevida. É assim que nós conseguimos nos organizar para oferecer o melhor serviço possível."
+
+#: .\tagging\fields.py:69
+#, python-format
+msgid "%s can only be set on instances."
+msgstr "%s pode somente ser setado em instâncias."
+
+#: .\tagging\forms.py:19
+msgid "Multiple tags were given."
+msgstr "Múltiplas tags foram dadas."
+
+#: .\tagging\forms.py:22
+#, python-format
+msgid "A tag may be no more than %s characters long."
+msgstr "Uma tag não pode ter mais que %s caracteres."
+
+#: .\tagging\forms.py:38
+#, python-format
+msgid "Each tag may be no more than %s characters long."
+msgstr "Cada tag não pode ter mais que %s caracteres."
+
+#: .\tagging\models.py:58
+#, python-format
+msgid "No tags were given: \"%s\"."
+msgstr "Nenhuma tag foi dada: \"%s\"."
+
+#: .\tagging\models.py:60
+#, python-format
+msgid "Multiple tags were given: \"%s\"."
+msgstr "Múltiplas tags foram dadas: \"%s\"."
+
+#: .\tagging\models.py:460
+msgid "name"
+msgstr "nome"
+
+#: .\tagging\models.py:466
+#: .\tagging\models.py:476
+msgid "tag"
+msgstr "tag"
+
+#: .\tagging\models.py:467
+msgid "tags"
+msgstr "tags"
+
+#: .\tagging\models.py:477
+msgid "content type"
+msgstr "content type"
+
+#: .\tagging\models.py:478
+msgid "object id"
+msgstr "object id"
+
+#: .\tagging\models.py:486
+msgid "tagged item"
+msgstr "tagged item"
+
+#: .\tagging\models.py:487
+msgid "tagged items"
+msgstr "tagged items"
+
+#: .\tagging\utils.py:189
+msgid "If a list or tuple of tags is provided, they must all be tag names, Tag objects or Tag ids."
+msgstr "If a list or tuple of tags is provided, they must all be tag names, Tag objects or Tag ids."
+
+#: .\tagging\utils.py:191
+msgid "The tag input given was invalid."
+msgstr "The tag input given was invalid."
+
+#: .\tagging\utils.py:236
+#, python-format
+msgid "Invalid distribution algorithm specified: %s."
+msgstr "Invalid distribution algorithm specified: %s."
+
+#: .\tagging\views.py:33
+msgid "tagged_object_list must be called with a queryset or a model."
+msgstr "tagged_object_list must be called with a queryset or a model."
+
+#: .\tagging\views.py:39
+msgid "tagged_object_list must be called with a tag."
+msgstr "tagged_object_list must be called with a tag."
+
+#: .\tagging\views.py:43
+#, python-format
+msgid "No Tag found matching \"%s\"."
+msgstr "No Tag found matching \"%s\"."
+
+#: .\tagging\templatetags\tagging_tags.py:19
+#, python-format
+msgid "tags_for_model tag was given an invalid model: %s"
+msgstr "tags_for_model tag was given an invalid model: %s"
+
+#: .\tagging\templatetags\tagging_tags.py:32
+#, python-format
+msgid "tag_cloud_for_model tag was given an invalid model: %s"
+msgstr "tag_cloud_for_model tag was given an invalid model: %s"
+
+#: .\tagging\templatetags\tagging_tags.py:56
+#, python-format
+msgid "tagged_objects tag was given an invalid model: %s"
+msgstr "tagged_objects tag was given an invalid model: %s"
+
+#: .\tagging\templatetags\tagging_tags.py:89
+#, python-format
+msgid "%s tag requires either three or five arguments"
+msgstr "%s tag requires either three or five arguments"
+
+#: .\tagging\templatetags\tagging_tags.py:91
+#: .\tagging\templatetags\tagging_tags.py:143
+#: .\tagging\templatetags\tagging_tags.py:198
+#, python-format
+msgid "second argument to %s tag must be 'as'"
+msgstr "second argument to %s tag must be 'as'"
+
+#: .\tagging\templatetags\tagging_tags.py:94
+#: .\tagging\templatetags\tagging_tags.py:147
+#, python-format
+msgid "if given, fourth argument to %s tag must be 'with'"
+msgstr "if given, fourth argument to %s tag must be 'with'"
+
+#: .\tagging\templatetags\tagging_tags.py:96
+#, python-format
+msgid "if given, fifth argument to %s tag must be 'counts'"
+msgstr "if given, fifth argument to %s tag must be 'counts'"
+
+#: .\tagging\templatetags\tagging_tags.py:141
+#, python-format
+msgid "%s tag requires either three or between five and seven arguments"
+msgstr "%s tag requires either three or between five and seven arguments"
+
+#: .\tagging\templatetags\tagging_tags.py:155
+#, python-format
+msgid "%(tag)s tag's '%(option)s' option was not a valid integer: '%(value)s'"
+msgstr "%(tag)s tag's '%(option)s' option was not a valid integer: '%(value)s'"
+
+#: .\tagging\templatetags\tagging_tags.py:164
+#, python-format
+msgid "%(tag)s tag's '%(option)s' option was not a valid choice: '%(value)s'"
+msgstr "%(tag)s tag's '%(option)s' option was not a valid choice: '%(value)s'"
+
+#: .\tagging\templatetags\tagging_tags.py:170
+#, python-format
+msgid "%(tag)s tag was given an invalid option: '%(option)s'"
+msgstr "%(tag)s tag was given an invalid option: '%(option)s'"
+
+#: .\tagging\templatetags\tagging_tags.py:175
+#, python-format
+msgid "%(tag)s tag was given a badly formatted option: '%(option)s'"
+msgstr "%(tag)s tag was given a badly formatted option: '%(option)s'"
+
+#: .\tagging\templatetags\tagging_tags.py:196
+#, python-format
+msgid "%s tag requires exactly three arguments"
+msgstr "%s tag requires exactly three arguments"
+
+#: .\tagging\templatetags\tagging_tags.py:221
+#, python-format
+msgid "%s tag requires exactly five arguments"
+msgstr "%s tag requires exactly five arguments"
+
+#: .\tagging\templatetags\tagging_tags.py:223
+#, python-format
+msgid "second argument to %s tag must be 'in'"
+msgstr "second argument to %s tag must be 'in'"
+
+#: .\tagging\templatetags\tagging_tags.py:225
+#, python-format
+msgid "fourth argument to %s tag must be 'as'"
+msgstr "fourth argument to %s tag must be 'as'"
+
+#: .\templates\base.html.py:12
+msgid "Frank Arturo - Tratamento da Obesidade"
+msgstr "Frank Arturo - Tratamento da Obesidade"
+
+#: .\templates\admin\base_site.html.py:4
+msgid "Frank Arturo - admin"
+msgstr "Frank Arturo - admin"
+
+#: .\templates\admin\base_site.html.py:16
+msgid "Frank Arturo - Admin"
+msgstr "Frank Arturo - Admin"
+
+#: .\templates\admin\base_site.html.py:59
+msgid "This is a real emergency. As soon as you click on the submit button, we will start to fix it."
+msgstr "Essa é uma emergência. Assim que você clicar no botão 'enviar', nós começaremos a analisar."
+
+#: .\templates\admin\base_site.html.py:60
+msgid "This is a very serious issue. Critical, yet is not an emergency. Consider it done in 24 hours."
+msgstr "É algo sério. Crítico, mas ainda não uma emergência. Considere feito em 24 horas."
+
+#: .\templates\admin\base_site.html.py:61
+msgid "This is a major issue, not critical. Yet, consider it done in 24 hours. "
+msgstr "É algo de prioridade alta mas não é crítico. Considere resolvido em 24 horas."
+
+#: .\templates\admin\base_site.html.py:62
+msgid "This is minor change. 48 hours is our deadline."
+msgstr "Essa é uma mudança menor. 48 horas é o nosso prazo."
+
+#: .\templates\admin\base_site.html.py:63
+msgid "A trivial change, it may take up to 72 hours to be solved."
+msgstr "Algo trivial, pode levar até 72 horas para ser solucionado."
+
+#: .\templates\admin\base_site.html.py:66
+msgid "Please, explain here what you want. If it is a bug type request, please try to tell us the details. The more, the better. Informations like steps to reproduce the problem and what browser (e.g.: IE or Firefox) you are using is essential. If it is a design issue, a screenshot attached would be great."
+msgstr "Por favor, explique aqui o que você deseja. Se é uma requisição a respeito de um problema, por favor tente-nos contar os detalhes. Quanto mais detalhes, melhor. Informações como passos para reproduzir o problema e que navegador (ex.: IE ou Firefox) você está usando são essenciais. Se é um problema de design, uma imagem da tela anexada seria ótimo."
+
+#: .\templates\admin\base_site.html.py:67
+msgid "A summary of your problem, e.g.: contact form is not working."
+msgstr "Um resumo do que você quer, exemplo: Formulário de contato não está funcionando."
+
+#: .\templates\admin\base_site.html.py:84
+msgid "Your request has been submited to us. A copy of all information you provided has been emailed to you too. Shortly, we will get in touch, thank you. "
+msgstr "Sua requisição foi enviada para nós. Uma cópia de toda essa informação foi enviada por e-mail a você. Brevemente, entraremos em contato. Muito obrigado."
+
+#: .\templates\admin\base_site.html.py:124
+msgid "meet montreal"
+msgstr "conheça a montreal"
+
+#: .\templates\admin\base_site.html.py:125
+msgid "open a request"
+msgstr "abrir uma requisição"
+
+#: .\templates\contact_form\contact_form.html.py:8
+msgid "Other options"
+msgstr "Outras opções"
+
+#: .\templates\contact_form\contact_form.html.py:42
+msgid "Submit"
+msgstr "Enviar"
+
+#: .\templates\contact_form\contact_form.html.py:53
+msgid "*Your name:"
+msgstr "*Seu nome:"
+
+#: .\templates\contact_form\contact_form.html.py:54
+msgid "*Your e-mail:"
+msgstr "*Seu e-mail:"
+
+#: .\templates\contact_form\contact_form.html.py:55
+msgid "*Your message:"
+msgstr "*Sua mensagem:"
+
+#: .\templates\contact_form\contact_form_sent.html.py:5
+msgid "Your e-mail has been sent."
+msgstr "Seu e-mail foi enviado com sucesso."
+
+#: .\templates\montcms\section_default.html.py:18
+msgid "There are no entries."
+msgstr "Não há entradas."
+
+#: .\templates\www\base.html.py:14
+msgid "OBESITY"
+msgstr "OBESIDADE"
+
+#: .\templates\www\base.html.py:15
+msgid "TIPS"
+msgstr "DICAS"
+
+#: .\templates\www\base.html.py:16
+msgid "SURGERIES"
+msgstr "CIRURGIAS"
+
+#: .\templates\www\base.html.py:17
+msgid "BMI"
+msgstr "IMC"
+
+#: .\templates\www\base.html.py:18
+msgid "ARTICLES"
+msgstr "ARTIGOS"
+
+#: .\templates\www\base.html.py:19
+msgid "CONTACT"
+msgstr "CONTATO"
+
+#: .\templates\www\base.html.py:43
+msgid "SEARCH"
+msgstr "BUSCA"
+
+#: .\templates\www\index.html.py:26
+#: .\templates\www\index.html.py:27
+msgid "Last Articles"
+msgstr "Últimos Artigos"
+
+#: .\templates\www\index.html.py:46
+msgid "And more..."
+msgstr "E mais..."
+
+#: .\templates\www\index.html.py:51
+#: .\templates\www\index.html.py:52
+msgid "Where are we"
+msgstr "Onde estamos"
+
+#, fuzzy
+#~ msgid "Log Messages"
+#~ msgstr "Sua mensagem:"
+
+#, fuzzy
+#~ msgid "Request Vars"
+#~ msgstr "Solicitação"
+
+#, fuzzy
+#~ msgid "SQL Queries"
+#~ msgstr "cirurgias"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "Tipo:"
+
+#, fuzzy
+#~ msgid "Message"
+#~ msgstr "Sua mensagem:"
+
+#, fuzzy
+#~ msgid "Variable"
+#~ msgstr "artigos"
+
+#~ msgid "type"
+#~ msgstr "Solicitação"

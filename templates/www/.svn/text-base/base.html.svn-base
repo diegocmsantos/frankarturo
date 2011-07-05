@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block base_extra_head %}
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.defaultvalue.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('h2.accordion').css('cursor', 'pointer');
+            $('div.accordion').css('display', 'none');
+            
+            $('h2.accordion').click(function(){
+                $(this).next('div.accordion').slideToggle("slow");
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block top %}
+    <div class="search">
+    <form method="get" action="http://www.google.com/search">
+        <input type="text" name="q" id="search"/>
+        <input type="hidden" name="sitesearch" value="frankarturo.com.br"/>
+    </form>
+    </div>
+    <br class="clear"/>
+    <ul id="nav">
+        <li id="obesity"><a href="{% url montcms_section 'obesidade' %}">{% trans "OBESITY" %}</a></li>
+        <li id="tips"><a href="{% url montcms_section 'dicas' %}">{% trans "TIPS" %}</a></li>
+        <li id="surgeries"><a href="{% url montcms_section 'cirurgias' %}">{% trans "SURGERIES" %}</a></li>
+        <li id="bmi"><a href="{% url www_bmi %}">{% trans "BMI" %}</a></li>
+        <li id="articles"><a href="{% url montcms_section 'artigos' %}">{% trans "ARTICLES" %}</a></li>
+        <li id="contact"><a href="{% url contact_form %}">{% trans "CONTACT" %}</a></li>
+    </ul>
+    
+    <div class="divider-vertical">&nbsp;</div>
+    
+{% endblock %}
+
+{% block footer %}
+<div id="footer-wrapper">
+    <ul id="footer-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="{% url contact_form %}">Contato</a></li>
+    </ul>    
+</div>
+    <div id="created-by">
+        <a href="http://montrealconsultoria.com.br" rel="external">
+            <img src="{{MEDIA_URL}}mylovelymontreal/img/logo_admin_montreal.png" alt="Montreal" class="montreal"/>
+        </a>
+    </div>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#search").defaultvalue(
+        '{% trans "SEARCH" %}'
+    );
+});
+</script>
+{% endblock %}
+
+{% block  base_body_end %}
+{% endblock %}

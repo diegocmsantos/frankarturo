@@ -1,0 +1,6 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}tips{% endblock %}
+
+{% block content %}
+{% endblock %}

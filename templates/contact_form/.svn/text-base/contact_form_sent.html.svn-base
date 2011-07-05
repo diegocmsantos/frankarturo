@@ -1,0 +1,6 @@
+{% extends "contact_form/contact_form.html" %}
+{% load i18n %}
+
+{% block form %}
+<p>{% trans "Your e-mail has been sent."%}</p>
+{% endblock %}

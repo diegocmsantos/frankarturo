@@ -1,0 +1,11 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}obesity{% endblock %}
+
+{% block content %}
+    {{ main.content }}
+{% endblock %}
+
+{% block base_body_end %}
+
+{% endblock %}

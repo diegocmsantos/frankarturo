@@ -1,0 +1,61 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="slider" class="slider">
+    <img src="{{MEDIA_URL}}img/arturo.png"/>
+    <!--<div class="slider-photo"></div>
+    <div class="slider"></div>
+    <div class="slider-text"></div>-->
+    
+</div>
+
+<div class="horizontal-divider">&nbsp;</div>
+
+<div id="featured">
+    <div class="column">
+        <h2>Depoimento Regina Amaral</h2>
+        <img src="{{MEDIA_URL}}img/regina_amaral.jpg" alt="Testimonial"/>
+        <p>
+            Eu n&atilde;o era t&atilde;o feliz como sou hoje. N&atilde;o &eacute; uma quest&atilde;o de simples apar&ecirc;ncia. &Eacute; de se sentir bem consigo mesma.
+            <br/><br/>
+            <a class="more" href="/">Ler Mais...</a>
+        </p>
+    </div>
+    
+    <div class="column">
+        <h2>{% trans "Last Articles" %}</h2>
+        <img src="{{MEDIA_URL}}img/last_articles.jpg" alt="{% trans 'Last Articles' %}"/>
+        <ul class="left">
+            {% for article in last_articles %}
+                {% if forloop.counter <= 3 %}
+                    <a href="{{ article.get_absolute_url }}">
+                        <li>{{article.title}}</li>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <ul class="right">
+            {% for article in last_articles %}
+                {% if forloop.counter > 3 %}
+                    <a href="{{ article.get_absolute_url }}">
+                        <li>{{article.title}}</li>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            <li><a class="more" href="{% url montcms_section 'artigos' %}">{% trans "And more..." %}</a></li>
+        </ul>
+    </div>
+    
+    <div class="column">
+        <h2>{% trans 'Where are we' %}</h2>
+        <img src="{{MEDIA_URL}}img/where_are_we.jpg" alt="{% trans 'Where are we' %}"/>
+        <p>
+            Avenida Dom Luiz, 1233 - Aldeota<br/>
+            Fortaleza - CE, 60160-230, Brasil<br/>
+            (0xx) 85 3486-6124<br/>
+        </p>
+    </div>
+</div>
+{% endblock %}

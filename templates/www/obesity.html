@@ -1,0 +1,558 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}obesity{% endblock %}
+
+{% block content %}
+    <h1 id="topo">Obesidade</h1>
+    <br/>
+    <p>Navegue clicando no respectivo tópico.</p>
+    <br/>
+    <ul>
+        <li><a href="#resolucao">{% trans "Resolução CFM 1.766" %}</a></li>
+        <li><a href="#perguntas_frequentes">{% trans "Perguntas Frequentes" %}</a></li>
+        <li><a href="#causas_obesidade">{% trans "Causas da obesidade" %}</a></li>
+        <li><a href="#tipos_cirurgia">{% trans "Tipos de cirurgia para obesidade" %}</a></li>
+        <li><a href="#anestesiologia">{% trans "Anestesiologia" %}</a></li>
+        <li><a href="#cirurgia_plastica">{% trans "Cirurgia Plástica" %}</a></li>
+        <li><a href="#educacao_fisica">{% trans "Educação Física" %}</a></li>
+        <li><a href="{% url www_obesitysearch %}">{% trans "Pesquisa sobre obesidade 2007" %}</a></li>
+    </ul>
+    
+    <p align="center"><a id="resolucao" class="style3">Resolução CFM 1.766/05</a></p>
+    <br/>
+    <p>(Publicada   no D.O.U., 11 jul 2005, Se&ccedil;&atilde;o I, p. 114)</p>
+    <br/>
+<p align="justify">Estabelece normas seguras para o tratamento cir&uacute;rgico   da obesidade m&oacute;rbida, definindo indica&ccedil;&otilde;es, procedimentos aceitos e&nbsp; equipe.&nbsp; </p>
+<br/>
+<p align="justify" >O Conselho Federal de Medicina, no uso das atribui&ccedil;&otilde;es conferidas pela Lei n&deg;   3.268/57, de 30 de setembro de 1957, regulamentada pelo Decreto n&deg; 44.045 de 19   de julho de 1958, e</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> que o alvo de toda a   aten&ccedil;&atilde;o do m&eacute;dico &eacute; a sa&uacute;de do ser humano, em benef&iacute;cio da qual dever&aacute; agir com   o m&aacute;ximo de zelo e o melhor de sua capacidade profissional (Art.2&deg; do   CEM);</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> que o m&eacute;dico deve aprimorar   continuamente seus conhecimentos e usar o melhor do progresso cient&iacute;fico em   benef&iacute;cio do paciente (Art.5&deg; do CEM);</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> que &eacute; vedado ao m&eacute;dico   efetuar qualquer procedimento m&eacute;dico sem o esclarecimento e o consentimento   pr&eacute;vios do paciente ou de seu respons&aacute;vel legal, salvo em iminente perigo de   vida (Art. 46 do CEM);</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> que o Conselho Federal de   Medicina &eacute; &oacute;rg&atilde;o supervisor da &eacute;tica profissional em toda a Rep&uacute;blica e, ao   mesmo tempo, julgador e disciplinador da classe m&eacute;dica, cabendo-lhe zelar e   trabalhar por todos os meios ao seu alcance pelo perfeito desempenho &eacute;tico da   medicina e pelo prest&iacute;gio e bom conceito da profiss&atilde;o e dos que a exer&ccedil;a   legalmente (Art.2&deg; da Lei n&deg;3.268/57);</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> a necessidade de   normatiza&ccedil;&atilde;o do tratamento cir&uacute;rgico da obesidade m&oacute;rbida;</p>
+<br/>
+<p align="justify" ><b>CONSIDERANDO</b> o parecer aprovado na   sess&atilde;o plen&aacute;ria de 13/05/05,</p>
+<br/>
+<p align="justify" ><b>RESOLVE</b>:</p>
+<br/>
+<p align="justify" ><b>Art. 1&deg;</b> - Normatizar, nos termos   dos itens do anexo desta resolu&ccedil;&atilde;o, o tratamento cir&uacute;rgico da obesidade   m&oacute;rbida.</p>
+<p align="justify" ><b>Art. 2&deg;</b> - Novos procedimentos ser&atilde;o   analisados pela C&acirc;mara T&eacute;cnica sobre   Cirurgia Bari&aacute;trica para Tratamento de Obesidade M&oacute;rbida.</p>
+<p align="justify" ><b>Art. 3&deg;</b> - O paciente e seus   familiares devem ser esclarecidos sobre os riscos da Cirurgia e a conduta a ser   tomada no p&oacute;s-operat&oacute;rio.</p>
+<p align="justify" ><b>Art. 4&deg;</b> - Esta resolu&ccedil;&atilde;o entra em   vigor na data de sua publica&ccedil;&atilde;o.</p>
+<br/>
+<p align="right">Bras&iacute;lia-DF, 13 de maio de   2005.</p>
+<br/>
+<h1 align="center" class="texto">Dr. EDSON DE OLIVEIRA ANDRADE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dra. L&Iacute;VIA BARROS   GAR&Ccedil;&Atilde;O</h1>
+<p align="center">Presidente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Secret&aacute;ria-Geral</p>
+<div align="center">
+  <table border="0" cellpadding="0" width="90%">
+
+    <tbody>
+      <tr>
+        <td><br clear="all" />        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br/>
+<p align="center"><b>ANEXO</b></p>
+<p align="justify" ><b>1-   INDICA&Ccedil;&Otilde;ES GERAIS: </b></p>
+
+<p align="justify" >Pacientes com &Iacute;ndice de   Massa Corp&oacute;rea (ICM) acima de 40 kg/m2.</p>
+<p align="justify" >Pacientes com IMC maior que   35 kg/m2&nbsp; e co-morbidades   (doen&ccedil;as agravadas pela obesidade e que melhoram quando a mesma &eacute; tratada de   forma eficaz) que ameacem a vida, tais como diabetes, apn&eacute;ia do sono,   hipertens&atilde;o arterial, dislipidemia, doen&ccedil;a coronariana, osteo-artrites e   outras.</p>
+<p align="justify" >Idade: maiores de 18 anos.   Idosos e jovens entre 16 e 18 anos podem ser operados, mas exigem precau&ccedil;&otilde;es   especiais e o custo/benef&iacute;cio deve ser muito bem analisado. </p>
+
+<p align="justify" >Obesidade est&aacute;vel h&aacute; pelo   menos cinco anos.</p>
+<p align="justify" >Pelo   menos dois anos de tratamento cl&iacute;nico pr&eacute;vio, n&atilde;o eficaz.</p>
+<p align="justify" >Aus&ecirc;ncia de drogas il&iacute;citas   ou alcoolismo.</p>
+<p align="justify" >Aus&ecirc;ncia de quadros   psic&oacute;ticos ou demenciais graves ou moderados.</p>
+
+<p align="justify" >Compreens&atilde;o, por parte do   paciente e de seus familiares, dos riscos e mudan&ccedil;as de h&aacute;bitos inerentes a uma   cirurgia de grande porte e da necessidade de acompanhamento p&oacute;s-operat&oacute;rio com a   equipe multidisciplinar por toda a vida do paciente. </p>
+<br/>
+<p align="justify" ><b>2 -   RISCO CIR&Uacute;RGICO:</b> deve ser compat&iacute;vel com o   procedimento cir&uacute;rgico proposto e aus&ecirc;ncia de doen&ccedil;as end&oacute;crinas de tratamento   cl&iacute;nico.</p>
+<br/>
+<p align="justify" ><b>3 -   EQUIPE:</b> precisa ser capacitada para cuidar do paciente nos per&iacute;odos pr&eacute; e   trans-operat&oacute;rio, e fazer o seguimento do mesmo.</p>
+<p align="justify" ><em>COMPOSI&Ccedil;&Atilde;O<b>:</b></em> cirurgi&atilde;o com forma&ccedil;&atilde;o   espec&iacute;fica, cl&iacute;nico, nutr&oacute;logo e/ou nutricionista, psiquiatra e/ou psic&oacute;logo,   fisioterapeuta, anestesiologista, enfermeiros e auxiliares de enfermagem   familiarizados com o manejo desses pacientes.</p>
+<br/>
+<p align="justify" ><b>4 -   HOSPITAL: </b>precisa apresentar condi&ccedil;&otilde;es   adequadas para atender obesos m&oacute;rbidos, bem como possuir UTI e aparelho   anest&eacute;sico regul&aacute;vel para ciclagem com grandes volumes e baixa   press&atilde;o.</p>
+<br/>
+<p align="justify" ><b>5 -   PROCEDIMENTOS ACEITOS: </b></p>
+<br/>
+<p align="justify" ><b>A) RESTRITIVOS:</b></p>
+<p align="justify" ><b>1-</b><b> </b><b>BAL&Atilde;O   INTRAG&Aacute;STRICO:</b> coloca&ccedil;&atilde;o de um bal&atilde;o   intrag&aacute;strico com cerca de 500 ml de l&iacute;quido, com 10% de Azul de Metileno,   objetivando diminuir a capacidade g&aacute;strica do paciente, provocando a saciedade e   diminuindo o volume residual dispon&iacute;vel para os alimentos. M&eacute;todo provis&oacute;rio: o   bal&atilde;o deve ser retirado no prazo m&aacute;ximo de seis meses. </p>
+<p align="justify" ><em>INDICA&Ccedil;&Atilde;O</em>: adjuvante do tratamento de   perda de peso, principalmente no preparo pr&eacute;-operat&oacute;rio de pacientes com   superobesidade (IMC acima de 50kg/m2), com associa&ccedil;&atilde;o de patologias   agravadas e/ou desencadeadas pela obesidade m&oacute;rbida. </p>
+<p align="justify" ><em>CONTRA-INDICA&Ccedil;&Otilde;ES</em>: esofagite de refluxo;   h&eacute;rnia hiatal; estenose ou divert&iacute;culo de es&ocirc;fago; les&otilde;es potencialmente   hemorr&aacute;gicas como varizes e &acirc;ngiodisplasias; cirurgia g&aacute;strica ou intestinal de   ressec&ccedil;&atilde;o; doen&ccedil;a inflamat&oacute;ria Intestinal; uso de antiinflamat&oacute;rios,   anticoagulantes,&nbsp; &aacute;lcool ou drogas e   transtornos ps&iacute;quicos.</p>
+
+<p align="justify" ><em>COMPLICA&Ccedil;&Otilde;ES</em>: ader&ecirc;ncias ao est&ocirc;mago;   passagem para o duodeno; intoler&acirc;ncia ao bal&atilde;o, com v&ocirc;mitos incoerc&iacute;veis;   &uacute;lceras e eros&otilde;es g&aacute;stricas; esvaziamento espont&acirc;neo do bal&atilde;o; obstru&ccedil;&atilde;o   intestinal por migra&ccedil;&atilde;o do bal&atilde;o; perfura&ccedil;&atilde;o g&aacute;strica; infec&ccedil;&atilde;o f&uacute;ngica em torno   do Bal&atilde;o.</p>
+
+<p align="justify" ><em>VIA DE ACESSO</em>:   endosc&oacute;pica.</p>
+<br/>
+<p align="justify" ><b>2-   GASTROPLASTIA VERTICAL BANDADA OU CIRURGIA DE MASON:</b> 
+<p align="justify" >Nestes procedimentos &eacute;   criado um pequeno reservat&oacute;rio g&aacute;strico na regi&atilde;o da c&aacute;rdia, com capacidade em   torno de 20 ml, regulando-se a sa&iacute;da por um anel de polipropileno. Estas   cirurgias provocam cerca de 20% de perda de peso.</p>
+<em>INDICA&Ccedil;&Otilde;ES:</em> pacientes n&atilde;o compulsivos, que n&atilde;o tenham o h&aacute;bito de ingest&atilde;o de doces em   abund&acirc;ncia e n&atilde;o se desviem da orienta&ccedil;&atilde;o nutricional, ingerindo l&iacute;quidos ricos   em calorias; caso contr&aacute;rio, os resultados s&atilde;o desanimadores. </p>
+
+<p align="justify" ><em>VANTAGENS:</em> causa m&iacute;nimas altera&ccedil;&otilde;es   metab&oacute;licas, com baixa morbi-mortalidade e baixo custo. Procedimento revers&iacute;vel,   preserva a absor&ccedil;&atilde;o e a digest&atilde;o. O est&ocirc;mago e o duodeno permanecem acess&iacute;veis &agrave;   investiga&ccedil;&atilde;o endosc&oacute;pica e radiol&oacute;gica.</p>
+
+<p align="justify" ><em>DESVANTAGENS:</em> perda de peso   insatisfat&oacute;ria (menos de 50% do excesso de peso) por f&iacute;stula gastrog&aacute;strica ou   por intoler&acirc;ncia progressiva maior &agrave; ingest&atilde;o de l&iacute;quidos ou pastosos   hipercal&oacute;ricos; maior ocorr&ecirc;ncia de v&ocirc;mitos; possibilidade de deisc&ecirc;ncia das   linhas grampeadas, </p>
+<p align="justify" >seguida de complica&ccedil;&otilde;es   intra-abdominais; procedimento inadequado tanto para pacientes que ingerem muito   doce como para portadores de esofagite de refluxo. </p>
+
+<p align="justify" ><em>VIAS DE ACESSO</em>: convencional&nbsp; (laparot&ocirc;mica) ou por   videocirurgia.</p>
+<br/>
+<p align="justify" ><b>3-   BANDA G&Aacute;STRICA AJUST&Aacute;VEL:</b> &eacute; uma pr&oacute;tese de silicone   que, colocada em torno do est&ocirc;mago proximal, faz com que este passe a ter a   forma de uma ampulheta ou uma c&acirc;mara acima da banda. O di&acirc;metro interno da banda   pode ser regulado no p&oacute;s-operat&oacute;rio por inje&ccedil;&atilde;o de l&iacute;quido no reservat&oacute;rio   situado no subcut&acirc;neo, de f&aacute;cil acesso. </p>
+
+<p align="justify" ><em>VANTAGENS:</em><em> </em>m&eacute;todo revers&iacute;vel, pouco   agressivo, permite ajustes individualizados no di&acirc;metro da pr&oacute;tese. Com sua   retirada &eacute; poss&iacute;vel&nbsp; realizar de outros   procedimentos bari&aacute;tricos, m&iacute;nimas repercuss&otilde;es nutricionais. N&atilde;o h&aacute; sec&ccedil;&atilde;o e   sutura do est&ocirc;mago. Baixa morbimortalidade operat&oacute;ria e retorno precoce &agrave;s   atividades habituais. </p>
+
+<p align="justify" ><em>DESVANTAGENS:</em> custo elevado; perda de   peso freq&uuml;entemente insuficiente a longo prazo; exige estrita coopera&ccedil;&atilde;o do   paciente em seguir as orienta&ccedil;&otilde;es dietoter&aacute;picas; riscos inerentes ao uso   permanente de corpo estranho; inadequada para pacientes que ingerem muito doce   e/ou apresentam esofagite de refluxo e h&eacute;rnia hiatal; possibilidade de   ocorr&ecirc;ncia de complica&ccedil;&otilde;es a longo prazo, como migra&ccedil;&atilde;o intrag&aacute;strica da banda,   deslizamento da banda e complica&ccedil;&otilde;es com o reservat&oacute;rio. </p>
+<p align="justify" ><em>VIA DE ACESSO:</em> convencional (laparot&ocirc;mica)   ou&nbsp; por videocirurgia.&nbsp; </p>
+<br/>
+<p align="justify" ><b>B)   CIRURGIAS DISABSORTIVAS<em>:</em></b></p>
+<p align="justify" >Essas   cirurgias (PAYNE OU BYPASS JEJUNO-JEJUNAL) est&atilde;o proscritas em vista da alta   incid&ecirc;ncia de complica&ccedil;&otilde;es metab&oacute;licas e nutricionais a longo prazo. O princ&iacute;pio   fundamental das mesmas &eacute; a perda, pelas fezes, das calorias ingeridas. As   complica&ccedil;&otilde;es ocorrem pela grande quantidade de intestino desfuncionalizado, que   leva a um supercrescimento bacteriano no extenso segmento intestinal exclu&iacute;do,   provocando alta incid&ecirc;ncia de complica&ccedil;&otilde;es digestivas, tais como diarr&eacute;ia,   cirrose, pneumatose intestinal e artrites. Pelo exposto, n&atilde;o mais devem ser   realizadas.</p>
+<br/>
+<p align="justify" ><b>C)   CIRURGIAS MISTAS: </b></p>
+<br/>
+<p align="justify" >As   cirurgias mistas para tratamento de obesidade m&oacute;rbida associam restri&ccedil;&atilde;o e   disabsor&ccedil;&atilde;o em maior ou menor grau do intestino, dependendo da t&eacute;cnica empregada   e da extens&atilde;o do intestino delgado exclu&iacute;do do tr&acirc;nsito alimentar. </p>
+<p align="justify" ><b>1 -   CIRURGIA MISTA COM MAIOR COMPONENTE RESTRITIVO:</b> esse grupo de cirurgias   compreende as diversas modalidades de bypass g&aacute;strico com reconstitui&ccedil;&atilde;o do   tr&acirc;nsito intestinal em &ldquo;Y de Roux&rdquo;. </p>
+
+<p align="justify" ><em>CIRURGIAS MAIS   EMPREGADAS:</em> </p>
+<p align="justify" >CIRURGIA DE FOBI, CIRURGIA   DE CAPELLA E CIRURGIA DE WITTGROVE E CLARK. Estas cirurgias, al&eacute;m da restri&ccedil;&atilde;o   mec&acirc;nica representada pela bolsa g&aacute;strica de 30 a 50 ml, restringem a   alimenta&ccedil;&atilde;o por meio de um mecanismo funcional do tipo Dumping (mal-estar   provocado pela ingest&atilde;o de alimentos l&iacute;quidos ou pastosos hipercal&oacute;ricos) e,   ainda, pela exclus&atilde;o da maior parte do est&ocirc;mago do tr&acirc;nsito alimentar. Com isso,   o horm&ocirc;nio ghrelina, que aumenta o apetite e &eacute; produzido no est&ocirc;mago sob   est&iacute;mulo da chegada do alimento, tem sua produ&ccedil;&atilde;o   minimizada.</p>
+
+<p align="justify" >Pode-se acrescentar um anel   estreitando a passagem pelo reservat&oacute;rio antes da sa&iacute;da da bolsa para a al&ccedil;a   jejunal &ndash; o que retarda o esvaziamento para s&oacute;lidos, aumentando, ainda mais, a   efic&aacute;cia dos procedimentos. </p>
+<p align="justify" ><em>VANTAGENS:</em> perda de peso adequada e   duradoura, com baixo &iacute;ndice de insucesso. Tratam a doen&ccedil;a do refluxo. S&atilde;o   eficientes em comedores de doces e t&ecirc;m baixo &iacute;ndice de complica&ccedil;&otilde;es a longo   prazo. F&aacute;cil controle metab&oacute;lico e nutricional do paciente. S&atilde;o revers&iacute;veis,   embora com dificuldade t&eacute;cnica. Apresentam &oacute;timos resultados em termos de   melhora da qualidade de vida e das doen&ccedil;as associadas. S&atilde;o as mais usadas no   Brasil e nos Estados Unidos, com maior tempo de acompanhamento.&nbsp;&nbsp;&nbsp; </p>
+
+<p align="justify" ><em>DESVANTAGENS:</em> tecnicamente mais   complexas; acesso limitado ao est&ocirc;mago e ao duodeno para m&eacute;todos radiol&oacute;gicos e   endosc&oacute;picos; pass&iacute;veis de complica&ccedil;&otilde;es como deisc&ecirc;ncia de suturas; maiores   chances de defici&ecirc;ncias prot&eacute;icas e anemia do que as cirurgias restritivas. </p>
+<p align="justify" ><em>VIA DE ACESSO:</em> convencional (laparot&ocirc;mica)   ou videocirurgia. </p>
+<br/>
+<p align="justify" ><b>2-   CIRURGIA MISTA COM MAIOR COMPONENTE DISABSORTIVO:<U> </U></b>S&atilde;o procedimentos que   envolvem menor restri&ccedil;&atilde;o da capacidade g&aacute;strica, o que permite maior ingest&atilde;o   alimentar, com predom&iacute;nio do componente disabsortivo.</p>
+<br/>
+<p align="justify" ><em>CIRURGIAS MAIS   USADAS:</em> </p>
+<ol>
+  <li>&sect;&nbsp;&nbsp;&nbsp; CIRURGIA DE SCOPINARO   (deriva&ccedil;&atilde;o b&iacute;lio-pancre&aacute;tica com gastrectomia distal).</li>
+
+  <li>&sect;&nbsp;&nbsp;&nbsp; CIRURGIA DE   DUODENAL-SWITCH (deriva&ccedil;&atilde;o b&iacute;lio-pancre&aacute;tica com gastrectomia vertical da grande   curvatura e preserva&ccedil;&atilde;o do piloro). Nestas cirurgias o intestino delgado &eacute;   seccionado a cerca de 250 cm da v&aacute;lvula &iacute;leo-cecal. O segmento distal &eacute;   anastomosado ao est&ocirc;mago. O </li>
+  <li>&sect;&nbsp;&nbsp;&nbsp; segmento proximal &eacute;   anastomosado ao &iacute;leo a 50, 100 ou 150 cm da v&aacute;lvula &iacute;leo-cecal, dependendo da   t&eacute;cnica escolhida. </li>
+
+</ol>
+<p align="justify" ><em>VANTAGENS:</em> n&atilde;o h&aacute; restri&ccedil;&atilde;o de   alimentos ingeridos; muito eficazes em rela&ccedil;&atilde;o &agrave; perda de peso e manuten&ccedil;&atilde;o a   longo prazo; reservat&oacute;rio g&aacute;strico completamente acess&iacute;vel aos m&eacute;todos de   investiga&ccedil;&atilde;o radiol&oacute;gica e endosc&oacute;picos. </p>
+
+<p align="justify" ><em>DESVANTAGENS:</em> mais sujeitos a   complica&ccedil;&otilde;es nutricionais e metab&oacute;licas de dif&iacute;cil controle; maior chance de   haver defici&ecirc;ncia de vitamina B12, c&aacute;lcio, e ferro; maior chance de haver   desmineraliza&ccedil;&atilde;o &oacute;ssea; alta incid&ecirc;ncia de &uacute;lcera de boca anastom&oacute;tica; aumento   do n&uacute;mero de evacua&ccedil;&otilde;es di&aacute;rias, com fezes e flatos muito f&eacute;tidos. </p>
+<br/>
+    <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>
+<br/>
+    <p align="center"><a id="perguntas_frequentes" class="style3">Perguntas frequentes</a></p>
+<br/>
+                          <p align="justify"><b>O que &eacute; Obesidade M&oacute;rbida ?</b>
+<br/>
+                          Obesidade M&oacute;rbida &eacute; definida   como um &Iacute;ndice de Massa Corp&oacute;rea igual ou superior a 35 Kg/m2 com comorbidades ou 40 Kg/m2 ou mais, sem comorbidades.</p>
+<br/>
+                          <p align="justify"><b>Quais s&atilde;o os tratamentos para a obesidade ?</b>
+                            H&aacute; in&uacute;meros   programas que visam &agrave; redu&ccedil;&atilde;o do peso, os quais incluem supervis&atilde;o nutricional,   programas de modifica&ccedil;&atilde;o comportamentais psiqui&aacute;tricos, dietas comerciais,   medicamentos para redu&ccedil;&atilde;o do apetite e o uso do bal&atilde;o intra-g&aacute;strico. </p>
+<br/>
+                          <p align="justify"><b>O que &eacute; &Iacute;ndice de Massa Corp&oacute;rea ?</b>
+<br/>
+                            &Eacute; o peso (em Kg) dividido pela altura do paciente (em M).</p>
+<br/>
+                          <p align="justify"><b>O que significa comorbidade ?</b><br/>
+                            A condi&ccedil;&atilde;o de obesidade   severa est&aacute; associada a um grande n&uacute;mero de problemas de sa&uacute;de. Alguns desses   problemas s&atilde;o causas de morte precoce como a doen&ccedil;a das art&eacute;rias coron&aacute;rias, o   diabetes de in&iacute;cio em idade adulta, as dificuldades respirat&oacute;rias do obeso e   apn&eacute;ia do sono, o risco aumentado de embolia pulmonar por altera&ccedil;&otilde;es da   coagula&ccedil;&atilde;o sangu&iacute;nea e outros. Existem tamb&eacute;m outros problemas que podem estar   presentes como doen&ccedil;as articulares graves dos membros inferiores e at&eacute; mesmo um   risco aumentado para alguns tipos de c&acirc;ncer (&uacute;tero, mama, intestino   grosso).
+                            Estima-se que o risco de morte prematura de homens severamente   obesos &eacute; 12 vezes maior quando comparado com homens n&atilde;o obesos na faixa et&aacute;ria   dos 25 aos 34 anos.</p>
+<br/>
+                          <p align="justify"><b>O que &eacute; a Cirurgia Bari&aacute;trica ?</b><br/>
+                            &Eacute; um procedimento   cir&uacute;rgico que tem por objetivo proporcionar e manter uma perda importante de   peso, ou seja, vislumbra a cura da obesidade m&oacute;rbida e suas consequ&ecirc;ncias. </p>
+<br/>
+                          <p align="justify"><b>Quando se opta pelo tratamento cir&uacute;rgico ?</b><br/>
+                            Normalmente os   pacientes que s&atilde;o submetidos &agrave; Cirurgia Bari&aacute;trica j&aacute; passaram por v&aacute;rios tipos   de dieta ou por outros meios que objetivam a perda de peso. Contudo, quando se   alcan&ccedil;am &iacute;ndices de peso que definem obesidade m&oacute;rbida, com ou sem comorbidades,   a indica&ccedil;&atilde;o cir&uacute;rgica torna-se incontest&aacute;vel no sentido de se minimizar os   riscos de mortalidade precoce.</p>
+<br/>
+                          <p align="justify"><b>O Bal&atilde;o intra-g&aacute;strico &eacute; um procedimento cir&uacute;rgico ?</b><br/>
+                            N&atilde;o.   Trata-se de um procedimento pouco invasivo, onde um bal&atilde;o, normalmente   preenchido por um l&iacute;quido, &eacute; posicionado dentro do est&ocirc;mago atrav&eacute;s de uma   endoscopia com seda&ccedil;&atilde;o.</p>
+<br/>
+                          <p align="justify"><b>Qual a diferen&ccedil;a entre o Bal&atilde;o e a Cirurgia Bari&aacute;trica ?</b><br/>
+                            O   Bal&atilde;o apresenta-se como um tratamento tempor&aacute;rio, mas eficiente, para indiv&iacute;duos   com sobrepeso (25-29Kg/m2) ou obesidade n&atilde;o severa (30-35Kg/m2). Tamb&eacute;m pode ser   utilizado nos obesos m&oacute;rbidos e superobesos (&ge;50kg/m2) como uma forma de melhor   prepar&aacute;-los para um procedimento definitivo (Cirurgia Bari&aacute;trica).&nbsp; </p>
+<br/>
+                          <p align="justify"><b>Mas o Bal&atilde;o &eacute; colocado em um centro cir&uacute;rgico ?</b><br/>
+                            N&atilde;o   necessariamente. &Eacute; um procedimento que necessita de seda&ccedil;&atilde;o e uma estrutura que   normalmente &eacute; encontrada nos centros onde s&atilde;o realizados os procedimentos de   endoscopia digestiva.</p>
+<br/>
+                          <p align="justify"><b>Ficarei com o Bal&atilde;o por quanto tempo ?</b><br/>
+                            Normalmente se   permanece com o Bal&atilde;o por um per&iacute;odo de seis meses.</p>
+<br/>
+                          <p align="justify"><b>Quais s&atilde;o os tipos de cirurgia ?</b><br/>
+                            As cirurgias realizadas e   que s&atilde;o reconhecidas pela Sociedade Brasileira de Cirurgia Bari&aacute;trica e pelo   Conselho Federal de Medicina s&atilde;o as seguintes:<br/>
+<br/>
+                            &raquo; Cirurgias restritivas &ndash; s&atilde;o as   menos utilizadas atualmente, t&ecirc;m o objetivo de restringir o volume de alimento   ingerido. A mais realizada constitui-se na coloca&ccedil;&atilde;o de um anel ajust&aacute;vel de   material altamente especializado na transi&ccedil;&atilde;o es&ocirc;fago-g&aacute;strica.<br/>
+                            &raquo; Cirurgias   restritivas com desvio do tr&acirc;nsito intestinal (Capella / Wittgrove) &ndash; s&atilde;o as   mais realizadas. Transformam uma por&ccedil;&atilde;o do est&ocirc;mago em um pequeno reservat&oacute;rio   de +/- 30 ml, diminuindo bastante a quantidade de alimento ingerido, e tamb&eacute;m   promovem uma disabsor&ccedil;&atilde;o de uma fra&ccedil;&atilde;o dos alimentos atrav&eacute;s de um desvio no   tr&acirc;nsito do intestino delgado.<br/>
+
+                            &raquo; Deriva&ccedil;&otilde;es b&iacute;lio-pancre&aacute;ticas   (Scopinaro/Duodenal Switch) &ndash; s&atilde;o procedimentos com indica&ccedil;&otilde;es mais selecionadas   que levam a um processo de maior disabor&ccedil;&atilde;o alimentar e n&atilde;o interferem na   quantidade de alimento ingerido. </p>
+<br/>
+                          <p align="justify"><b>Qual &eacute; o tratamento ou cirurgia mais indicado / adequado ao meu   caso ?</b>
+                            A escolha do melhor procedimento cir&uacute;rgico baseia-se no &Iacute;ndice   de Massa Corp&oacute;rea e na quantidade de calorias e tipo de alimento que normalmente   o paciente ingere.</p>
+<br/>
+                          <p align="justify"><b>Essas cirurgias oferecem riscos? Quais ?</b><br/>
+                            Sim, como   quaisquer outros procedimentos cir&uacute;rgicos. Embora m&iacute;nimos, existem &iacute;ndices de   morbidade e mortalidade cir&uacute;rgicos. A mortalidade e a mortalidade desse   procedimento varia obviamente com a condi&ccedil;&atilde;o cl&iacute;nica pr&eacute;-operat&oacute;ria do obeso e   seu grau de obesidade. As complica&ccedil;&otilde;es mais comuns no per&iacute;odo p&oacute;s-operat&oacute;rio s&atilde;o   as pulmonares (pequenos colabamentos no pulm&atilde;o&ndash;atelectasias e pneumonias),   trombose venosa profunda e embolia pulmonar (co&aacute;gulos que se forma dentro do   sistema venoso), infec&ccedil;&atilde;o da ferida operat&oacute;ria, vazamento do conte&uacute;do   gastrointestinal atrav&eacute;s da abertura das suturas (costuras) realizadas,   sangramento digestivo pelo reto, e c&aacute;lculos na ves&iacute;cula biliar a longo prazo.&nbsp;   De modo gera, a mortalidade encontra-se em n&iacute;veis inferiores a 3%.</p>
+<br/>
+                          <p align="justify"><b>Por que optar pela cirurgia aberta ou   videolaparosc&oacute;pica ?</b><br/>
+                            A cirurgia realizada da forma aberta   (convencional) ou por videolaparoscopia &eacute; exatamente a mesma, o que muda &eacute; o   acesso utilizado - grandes incis&otilde;es (na aberta) ou mini-incis&otilde;es (na   laparosc&oacute;pica). Obviamente, quando se opta pela forma menos invasiva, a dor   p&oacute;s-operat&oacute;ria e as complica&ccedil;&otilde;es com a pr&oacute;pria ferida cir&uacute;rgica s&atilde;o menores, o   tempo de interna&ccedil;&atilde;o e de recupera&ccedil;&atilde;o tamb&eacute;m &eacute; menor, fazendo da cirurgia por   videolaparoscopia a mais adequada e devendo ser indicada sempre que   poss&iacute;vel.</p>
+<br/>
+                          <p align="justify"><b>Em m&eacute;dia quanto tempo dura o procedimento ?</b><br/>
+                            Em m&eacute;dia   esses procedimentos duram em torno de 1h e 30 min. a 2 horas, mas depende da   experi&ecirc;ncia do cirurgi&atilde;o e do entrosamento de sua equipe cir&uacute;rgica,   principalmente quando realizada por videolaparoscopia.</p>
+<br/>
+                          <p align="justify"><b>&Eacute; uma cirurgia dolorosa ?</b><br/>
+                            As cirurgias realizadas da   maneira convencional (aberta), diferentemente daquelas realizadas por   videolaparoscopia, tendem a proporcionar mais dor no per&iacute;odo p&oacute;s-operat&oacute;rio   devido &agrave; extens&atilde;o da incis&atilde;o cir&uacute;rgica, mas &eacute; um fato totalmente control&aacute;vel uma   vez que existem no mercado poderosos esquemas de analgesia p&oacute;s-operat&oacute;ria, seja   forma endovenosa ou por via oral.</p>
+<br/>
+                          <p align="justify"><b>&Eacute; poss&iacute;vel a realiza&ccedil;&atilde;o de alguma outra cirurgia simultaneamente ?</b><br/>
+                            Sim. Desde que isso n&atilde;o acrescente um aumento na   morbidade da cirurgia bari&aacute;trica. Procedimentos ditos limpos (cirurgias   pl&aacute;sticas principalmente)&nbsp; devem ser evitados no mesmo ato, uma vez que os   procedimentos bari&aacute;tricos s&atilde;o potencialmente contaminados.</p>
+<br/>
+                          <p align="justify"><b>Qual o tamanho da cicatriz ?</b><br/>
+                            No procedimento   convencional, &eacute; realizada uma incis&atilde;o vertical acima da cicatriz umbilical, cuja   extens&atilde;o varia de acordo com o cirurgi&atilde;o e o paciente, por&eacute;m esta deve ter no   m&iacute;nimo 20 cm. J&aacute; no procedimento videolaparosc&oacute;pico, s&atilde;o realizadas cinco a sete   pequenas incis&otilde;es estrat&eacute;gicas de 10 a 12 mm.</p>
+<br/>                          
+                          <p align="justify"><b>H&aacute; alguma recomenda&ccedil;&atilde;o espec&iacute;fica para o   pr&eacute;-operat&oacute;rio ?</b><br/>
+                            Al&eacute;m do preparo pr&eacute;-operat&oacute;rio que se faz de rotina   para qualquer procedimento cir&uacute;rgico, &eacute; solicitado ao paciente que se esforce   para uma certa perda de peso, pois alguns quilos a menos podem significar   melhores condi&ccedil;&otilde;es para uma anestesia geral e tamb&eacute;m podem ajudar durante o   procedimento.</p>
+<br/>
+                          <p align="justify"><b>Em quanto tempo poderei retornar ao trabalho e &agrave;s atividades normais ?</b><br/>
+                            Com o advento da cirurgia videolaparosc&oacute;pica o quesito   recupera&ccedil;&atilde;o r&aacute;pida tornou-se uma realidade. Os pacientes submetidos &agrave; cirurgia   bari&aacute;trica e que apresentam boa evolu&ccedil;&atilde;o p&oacute;s-operat&oacute;ria poder&atilde;o retornar ao   trabalho e &agrave;s suas atividades normais dentro de dez a quinze dias.</p>
+<br/>
+                          <p align="justify"><b>Qual &eacute; o tempo m&eacute;dio de recupera&ccedil;&atilde;o ?</b><br/>
+                            O paciente estar&aacute;   apto a realizar atividades leves em aproximadamente 7 a 10 dias. J&aacute; para   atividades que exijam esfor&ccedil;os f&iacute;sicos moderados &eacute; razo&aacute;vel aguardar um per&iacute;odo   de pelo menos 30 dias. </p>
+<br/>
+                          <p align="justify"><b>Como ser&aacute; o p&oacute;s-operat&oacute;rio ?</b><br/>
+                            Nas opera&ccedil;&otilde;es realizadas por   videolaparoscopia o per&iacute;odo p&oacute;s-operat&oacute;rio costuma ser tranq&uuml;ilo, com pequeno   desconforto nos locais das incis&otilde;es. &Eacute; muito importante salientar que a dieta   (l&iacute;quidos) adotada nesse per&iacute;odo deve ser seguida rigorosamente.</p>
+<br/>
+                          <p align="justify"><b>Terei que ingerir apenas l&iacute;quidos ?</b><br/>
+                            No per&iacute;odo inicial de   30 dias a dieta l&iacute;quida deve ser seguida rigorosamente. Ap&oacute;s esse per&iacute;odo,   haver&aacute; nova orienta&ccedil;&atilde;o nutricional com evolu&ccedil;&atilde;o da dieta.</p>
+<br/>
+                          <p align="justify"><b>Como ser&aacute; minha alimenta&ccedil;&atilde;o ?</b><br/>
+                            Em decorr&ecirc;ncia do processo   restritivo que &eacute; criado com a cirurgia, m&iacute;nimas quantidades de alimento v&aacute;rias   vezes ao dia s&atilde;o suficientes para gerar saciedade plena. </p>
+<br/>
+                          <p align="justify"><b>Sentirei muita fome ?</b><br/>
+                            N&atilde;o. O primeiro reflexo de saciedade   da fome &eacute; o enchimento do est&ocirc;mago, e como agora ele &eacute; bastante reduzido, poucas   quantidades de alimento s&atilde;o suficientes. </p>
+<br/>
+                          <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>                          
+
+                          <p>&nbsp;</p>
+<br/>
+                          <p align="center"><a id="causas_obesidade" class="style3">Causas da obesidade</a></p>
+<br/>
+                          <p align="justify">B&aacute;sicamente, a obesidade pode ser atribuida a quatro fatores : excesso de   ingesta, falta de atividade f&iacute;sica, tend&ecirc;ncia (gen&eacute;tica) e problemas   glandulares.</p>
+<br/>
+                          <p align="justify"><b>1. Excesso de ingesta.</b>
+<br/>
+                            Neste aspecto, podemos afirmar que a obesidade &eacute; uma doen&ccedil;a da civiliza&ccedil;&atilde;o. O   homen primitivo n&atilde;o era obeso, pois alimentava-se de sementes, ra&iacute;zes e frutas e   n&atilde;o dispunha destes alimentos o ano todo. Atualmente, temos a nossa disposi&ccedil;&atilde;o   alimentos industrializados, muito palat&aacute;veis e altamente cal&oacute;ricos. A ingesta de   alimentos contendo altos teores de gordura tem sido considerado o grande vil&atilde;o   causador da obesidade. O fator psicol&oacute;gico influenciando a ingesta tamb&eacute;m &eacute;   muito importante. Desde pequeno aprendemos que comida &eacute; "premio" , pois os fatos   importantes da vida s&atilde;o sempre comemorados com comida. Basta o individuo estar   frustrado, stressado, angustiado, para querer uma compensa&ccedil;&atilde;o, um " premio". </p>
+
+<br/>
+                          <p align="justify"><b>2. Falta de atividade f&iacute;sica.</b>
+<br/>
+                            Existem dois tipos de atividade f&iacute;sica, uma programada e uma n&atilde;o   programada. A atividade f&iacute;sica programada &eacute; aquela da academia de gin&aacute;stica, da   nata&ccedil;&atilde;o, do jogo de tenis. Este tipo de atividade f&iacute;sica vem aumentando nos   &uacute;ltimos tempos mas apenas para uma pequena parcela da popula&ccedil;&atilde;o. A atividade   f&iacute;sica n&atilde;o programada vem diminuindo na medida em que aumentam os confortos da   vida moderna : controles remotos de TV, elevadores, autom&oacute;veis, escadas   rolantes, extens&otilde;es de telefone por toda a casa etc. Existem levantamentos   feitos em alguns pa&iacute;ses nos quais houve diminui&ccedil;&atilde;o da ingesta de alimentos,   aumento da atividade programada e aumento da obesidade, o qual &eacute; atribuido &agrave;   diminui&ccedil;&atilde;o da atividade f&iacute;sica n&atilde;o programada.</p>
+<br/>
+                          <p align="justify"><b>3. Tend&ecirc;ncia ( fator gen&eacute;tico)</b>
+<br/>
+                            Quando os pais tem peso normal, 10% dos filhos s&atilde;o obesos; quando um dos pais   &eacute; obeso, 50% dos filhos s&atilde;o obesos; e quando ambos os pais s&atilde;o obesos, 80% dos   filhos s&atilde;o obesos. </p>
+                          <p align="justify">Estes dados e in&uacute;meros outros trabalhos feitos com familias e gemeos   identicos, tem demonstrado que a gen&eacute;tica desempenha um papel fundamental na   g&ecirc;nese da obesidade.</p>
+
+                          <p align="justify"><b>4. Problemas glandulares.</b><br/>Altera&ccedil;&otilde;es na fun&ccedil;&atilde;o da glandula tire&oacute;ide , supra-renais e regi&atilde;o   hipotalamica podem ser respons&aacute;veis pela obesidade. N&atilde;o s&atilde;o as causas mais   comuns deste problema mas devem ser sempre descartadas.</p>                          <p align="justify">&nbsp;</p>
+                          <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>                          
+
+                          <p>&nbsp;</p>
+
+                          <p align="center"><a id="tipos_cirurgia">Tipos de Cirurgia para Obesidade</a></p>
+                          <p align="justify">Quando o tratamento com medicamentos falha e o &iacute;ndice de massa corp&oacute;rea se   encontra adequado para cirurgia quais as formas de tratamento?</p>
+                          <br/>
+                            <p>Existem tr&ecirc;s formas b&aacute;sicas de tratamento cir&uacute;rgico:</p>
+                            <br/>
+                            <ul>
+                              <li>atrav&eacute;s das t&eacute;cnicas restritivas </li>
+                              <li>das t&eacute;cnicas disabsortivas </li>
+                              <li>t&eacute;cnicas mistas.</li>
+                            </ul>
+                            <br/>
+                            <p><b>1 - O que s&atilde;o t&eacute;cnicas restritivas ?</b></p>
+                            <br/>
+                            <p align="justify">S&atilde;o t&eacute;cnicas que limitam o volume de alimento s&oacute;lido que o paciente ingere   nas refei&ccedil;&otilde;es. De uma forma geral, com estas t&eacute;cnicas o paciente come menos   s&oacute;lidos e pastosos e consequentemente emagrece. O resultado, no entanto, depende   da colabora&ccedil;&atilde;o do paciente pois alimentos l&iacute;quidos podem ser ingeridos quase no   mesmo volume que eram antes da opera&ccedil;&atilde;o e se forem muito cal&oacute;ricos ir&atilde;o   atrapalhar ou at&eacute; impedir a perda de peso.</p>
+                            <p align="justify">Ent&atilde;o por que faz&ecirc;-las ?</p>
+                            <br/>
+                            <p align="justify">Porqu&ecirc; s&atilde;o mais simples, de menor risco, de mais f&aacute;cil adapta&ccedil;&atilde;o, e de f&aacute;cil   recupera&ccedil;&atilde;o. <br/>
+                              O mais IMPORTANTE &eacute; saber que a perda de peso &eacute; menor do que   nas outras t&eacute;cnicas.</p>
+                            <br/>
+                            <p align="justify">Como s&atilde;o as t&eacute;cnicas restritivas ?</p>
+                            <p align="justify">Existem v&aacute;rias formas de faz&ecirc;-las. </p>
+                            <p align="justify">As principais s&atilde;o: </p>
+                            <br/>
+                            <UL>
+                              <LI>a cerclagem dent&aacute;ria, </LI>
+                              <LI>o bal&atilde;o intrag&aacute;strico, </LI>
+                              <LI>a gastroplastia vertical restritiva de Mason, </LI>
+                              <LI>a banda g&aacute;strica ajust&aacute;vel por laparoscopia <br/>
+                              </LI>
+                            </UL>
+                            <br/>
+                            <p align="justify">Como &eacute; a cerclagem dent&aacute;ria ?</p>
+                            <br/>
+                            <p align="justify">&Eacute; uma forma antiga de tratamento, no momento em desuso pela qual os dentes da   arcada superior s&atilde;o amarrados com fios de a&ccedil;o com os dentes da arcada   inferior.
+                            <br/>
+                              Com isto, o paciente toma l&iacute;quidos em pequenas quantidades de baixo   valor cal&oacute;rico levando a perda importante de peso.
+                            <br/>
+                              &Eacute; um m&eacute;todo tempor&aacute;rio e   deve ser interrompido quando se alcan&ccedil;a uma perda de peso aceit&aacute;vel e poss&iacute;vel.   Nem sempre se consegue perda de peso que conven&ccedil;a.</p>
+<br/>
+                            <p align="justify">O que &eacute; o <b>Bal&atilde;o intrag&aacute;strico</b>? ( Bioenterics Intragastric   Balloon - BIB&reg;)</p>
+                            <div align="center"><img src="{{ MEDIA_URL }}img/cirurgies_types/balao_intragastrico.png" /></div>
+                            <p align="justify">
+                              O bal&atilde;o   intrag&aacute;strico &eacute; feito de silicone, preenchido por uma solu&ccedil;&atilde;o liquida, ap&oacute;s ser   colocado atrav&eacute;s de endoscopia no interior do est&ocirc;mago, pode permanecer l&aacute; por   um per&iacute;odo&nbsp; de 4 a 6 meses, causando sensa&ccedil;&atilde;o de saciedade mais precoce, devendo   ser retirado ap&oacute;s esse per&iacute;odo.&nbsp; Nos primeiros dias ap&oacute;s a coloca&ccedil;&atilde;o do bal&atilde;o o   paciente pode&nbsp; apresentar n&aacute;useas e v&ocirc;mitos intensos, obrigando a interna&ccedil;&atilde;o   hospitalar para melhora do quadro ou em casos extremos a retirada do bal&atilde;o. N&atilde;o   &eacute; o bal&atilde;o que emagrece, ele diminui o volume ingerido devido a saciedade precoce   (pode-se ingerir uma grande quantidade de calorias numa pequena por&ccedil;&atilde;o de   alimentos) a sua presen&ccedil;a associado a reeduca&ccedil;&atilde;o alimentar &eacute; que levam a um bom   resultado, na perda de peso. &Eacute; utilizado em "superobesos" que necessitam perder   peso antes de se submeterem &agrave; cirurgia.<br/>
+
+                              O bal&atilde;o intrag&aacute;strico vem se   mostrando um recurso promissor , quer no preparo pr&eacute;-operat&oacute;rio, quer como fator   coadjuvante do tratamento cl&iacute;nico.<br/>
+                            </p>
+<br/>
+                            <p align="justify">O que &eacute; <b>gastroplastia vertical restritiva de Mason</b>?</p>
+                            <p align="justify">Mason, cirurgi&atilde;o norte-americano, descreveu j&aacute; h&aacute; alguns anos esta opera&ccedil;&atilde;o   que consiste em "grampear" o est&ocirc;mago de maneira a criar um pequeno tubo que   recebe o alimento dando ao paciente a sensa&ccedil;&atilde;o de estar "cheio". <br/>
+
+                              Com isto   esta antec&acirc;mara g&aacute;strica esvazia-se lentamente e o paciente tem a sensa&ccedil;&atilde;o de   que est&aacute; satisfeito. <br/>
+                              Somando o volume final de alimentos ingeridos durante o   dia corresponder&aacute; a um pequeno percentual do seu habitual e assim perder&aacute;   peso.<br/>
+                              O inconveniente &eacute; que se o paciente usar l&iacute;quidos em vez de alimentos   s&oacute;lidos, poder&aacute; toma-los em grande quantidade e ser forem hipercal&oacute;ricos, a   perda de peso n&atilde;o ser&aacute; a esperada.<br/>
+
+                              &Eacute; uma t&eacute;cnica que deve ser usada em   pacientes especiais, escolhidos com crit&eacute;rio, disciplinados e cooperativos.   Fazemos esta opera&ccedil;&atilde;o em car&aacute;ter excepcional.</p>
+                            <p align="justify">O que s&atilde;o grampeadores ?</p>
+                            <p align="justify">S&atilde;o instrumentos que fazem os cortes e as costuras cir&uacute;rgicas autom&aacute;ticas e   usam como material de sutura delicados e finos fios de a&ccedil;o tit&acirc;nio que quando   aplicados lembram a forma de grampos de papel.</p>
+<br/>
+                            <p align="justify">O que &eacute; <b>banda g&aacute;strica ajust&aacute;vel</b> por laparoscopia (lap-band   ou banda laparosc&oacute;pica) ? </p>
+                            <div align="center"><img src="{{ MEDIA_URL }}img/cirurgies_types/banda_gastrica_ajustavel.png" /></div>
+                            
+                            <p align="justify">A banda g&aacute;strica &eacute; uma pr&oacute;tese de silicone que tem um bal&atilde;o insufl&aacute;vel, por   dentro, parecido com um manguito do aparelho de medir press&atilde;o arterial. </p>
+                            <div align="center"><img src="{{ MEDIA_URL }}img/cirurgies_types/banda_gastrica_ajustavel2.png" /></div>
+                            
+                            <p align="justify">Quando   colocada em volta da parte alta do est&ocirc;mago forma um anel que o aperta   conferindo-lhe a forma de um rel&oacute;gio de areia. <br/>
+                              Quando o bal&atilde;o &eacute; insuflado ou   desinsuflado, aperta mais ou menos o est&ocirc;mago de maneira que podemos controlar o   esvaziamento do alimento da parte alta para a parte baixa do &oacute;rg&atilde;o. <br/>
+                              O bal&atilde;o   &eacute; ligado a um bot&atilde;o de metal e pl&aacute;stico que fica embaixo da pele por interm&eacute;dio   de um delicado tubo de silicone. <br/>
+
+                              Este bot&atilde;o que fica sob a pele e gordura,   fixo no m&uacute;sculo do abdome, pode ser alcan&ccedil;ado com uma fina agulha de inje&ccedil;&atilde;o. <br/>
+                              Desta forma podemos injetar &aacute;gua distilada para apertar mais o est&ocirc;mago ou   esvaziar o recept&aacute;culo para aliviar a obstru&ccedil;&atilde;o &agrave; passagem de alimento. <br/>
+                              O   principio da opera&ccedil;&atilde;o &eacute; semelhante a opera&ccedil;&atilde;o de Mason por&eacute;m &eacute; feita por   laparoscopia, ou seja, sem abrir o abdome e pode ser regulada depois, a qualquer   tempo, ambulatorialmente. <br/>
+
+                              A perda de peso, da mesma forma, fica em torno de   20 a 30% em m&eacute;dia e depende da coopera&ccedil;&atilde;o do paciente.</p>
+<br/>
+                            <p align="justify"><b>2 - O que s&atilde;o t&eacute;cnicas disabsortivas ?</b></p>
+<br/>
+                            <p align="justify">S&atilde;o t&eacute;cnicas que permitem ao paciente comer, no entanto atrapalham a absor&ccedil;&atilde;o   dos nutrientes e com isto levam o obeso ao emagrecimento. <br/>
+                              S&atilde;o, em geral   muito bem sucedidas quanto ao emagrecimento que pode chegar a 40% do peso   original, no entanto tem necessidade de controle mais r&iacute;gido quanto a dist&uacute;rbios   nutricionais, de elementos minerais e vitaminas. <br/>
+
+                              Vem se tornando cada vez   mais popular devido a qualidade de vida que traz ao paciente. </p>
+                            <p align="justify">Estas opera&ccedil;&otilde;es s&atilde;o conhecidas como "desvios do intestino" ?</p>
+                            <p align="justify">Desviam uma boa parte do caminho que os alimentos tem que passar , desta   forma fazendo um curto circuito levando a uma absor&ccedil;&atilde;o menor dos   nutrientes.<br/>
+                              Dentre as v&aacute;rias t&eacute;cnicas propostas, tr&ecirc;s s&atilde;o as mais conhecidas   e, o mais importante, reconhecidas: <br/>
+
+                              A cirugia de Payne que &eacute; um desvio   intestinal grande sem se mexer no est&ocirc;mago.<br/>
+                              Esta &eacute; uma cirurgia de exce&ccedil;&atilde;o   pois pode levar a dist&uacute;rbios nutricionais muito acentuados e &eacute; somente utilizada   atrav&eacute;s de crit&eacute;rios rigorosos. <br/>
+
+                              Muitas vezes esta cirurgia &eacute; utilizada como   tratamento tempor&aacute;rio em pacientes excessivamente obesos. <br/>
+                              Por ser uma   cirurgia tecnicamente simples, ela &eacute; realizada em um primeiro tempo para o   paciente perder algum peso para depois se fazer a cirurgia definitiva num   segundo tempo.<br/>
+                              <br/>
+                              Outra cirurgia disabsortiva chama-se <b>deriva&ccedil;&atilde;o   biliopancre&aacute;tica ou cirurgia de Scopinaro </b>(nome do cirurgi&atilde;o que   inventou este procedimento). </p>
+                            <div align="center"><img src="{{ MEDIA_URL }}img/cirurgies_types/scopinaro.png" /></div>
+<br/>
+                            <p align="justify">
+                              Esta   cirurgia consiste em retirar a metade do est&ocirc;mago, desta forma fazendo com que o   paciente possa comer um volume menor por&eacute;m satisfat&oacute;rio, associado a um "desvio   intestinal" importante. <br/>
+                              Habitualmente a ves&iacute;cula biliar &eacute; retirada neste   procedimento : quase 90 % dos pacientes podem apresentar pedras na ves&iacute;cula   durante o processo de emagrecimento. <br/>
+
+                              &Eacute; uma cirugia que apresenta bons   resultados e uma perda de 40% do peso total.</p>
+<br/>
+                            <p align="justify">A terceira t&eacute;cnica chama-se <b>Deriva&ccedil;&atilde;o Bilipancre&aacute;tica com Duodenal   Switch </b>ou cirurga de Hess na qual &eacute; realizada uma ressec&ccedil;&atilde;o   longitudinal do est&ocirc;mago. <br/>
+                              Neste procedimente &eacute; preservada a anatomia b&aacute;sica   do est&ocirc;mago e sua fisiologia no esvaziamento do alimento do est&ocirc;mago. <br/>
+
+                              Outra   adi&ccedil;&atilde;o &agrave; t&eacute;cnica &eacute; a preserva&ccedil;&atilde;o de uma pequena faixa do duodeno (primeira   por&ccedil;&atilde;o do intestino delgado). <br/>
+                              Esta pequena faixa de duodeno favorece a   absor&ccedil;&atilde;o de in&uacute;meros nutrientes incluindo prote&iacute;nas, calcio, ferro e vitamina   B12. O que n&atilde;o acontece nas outras cirurgias para perda de peso. Vem sendo   considerada uma evolu&ccedil;&atilde;o das cirurgias. <br/>
+
+                              O componente disabsortivo (desvio   intestinal) do duodenal switch faz com que o alimento venha por um caminho   enquanto os sucos digestivos ( bile e suco pancre&aacute;tico) venham por outro. <br/>
+                              Eles se encontram apenas a 100cm de acabar o intestino delgado. Isto inibe a   absor&ccedil;&atilde;o de calorias e nutrientes levando a um emagrecimento importante. </p>
+<br/>
+                            <p align="justify">As principais vantagens desta cirurgia s&atilde;o: 1.seu est&ocirc;mago foi diminuido sem   a presen&ccedil;a de bandas ou an&eacute;is; 2. a cirurgia pode ser totalmente revertida (com   exce&ccedil;&atilde;o da faixa de est&ocirc;mago que foi retirada); 3.n&atilde;o &eacute; retirada nada do seu   intestino como &eacute; proposto em outras t&eacute;cnicas; 4. alguns nutrientes s&atilde;o   absorvidos na pequena faixa de duodeno preservada; 5. O volume de alimento que   vai poder ingerir em alguns meses de p&oacute;s-operat&oacute;rio vai ser praticamente normal   e finalmente ; 6. a perda de peso &eacute; consistente e duradoura.</p>
+<br/>
+                            <p align="justify">Em estudos recentes p&ocirc;de-se comprovar que aqualidade de vida dos pacientes   submetidos a este procedimento apresentam maior satisfa&ccedil;&atilde;o a longo prazo. </p>
+<br/>
+                            <p align="justify">Todas as cirurgias disabsortivas t&ecirc;m riscos e complica&ccedil;&otilde;es a curto e longo   prazo. &Eacute; muito importante discutir com seu m&eacute;dico sobre estas complica&ccedil;&otilde;es e o   que pode ser feito para previn&iacute;-las. </p>
+<br/>
+                            <p align="justify"><b>3 - E as t&eacute;cnicas mistas ?</b></p>
+<br/>
+                            <p align="justify">S&atilde;o t&eacute;cnicas que associam um pouco de restri&ccedil;&atilde;o a ingesta do bolo alimentar   com um pouco de disabsor&ccedil;&atilde;o, ou seja um desvio intestinal menor. </p>
+                            <p align="justify">Atualmente a t&eacute;cnica mais utilizada chama-se<b> by-pass   g&aacute;strico</b> <b>com anel</b> ou <b>cirurgia de   Fobi-Capella</b> (cirurgi&otilde;es que a inventaram). <br/>
+<br/>
+                              Ela consiste em uma   redu&ccedil;&atilde;o do est&ocirc;mago atrav&eacute;s de grampeamento. </p>
+<br/>
+                            <div align="center"><img src="{{ MEDIA_URL }}img/cirurgies_types/capella.png" /></div>
+<br/>
+                            <p align="justify">
+                              O   est&ocirc;mago &eacute; dividido em duas partes: uma menor (30ml) que ser&aacute; por onde o   alimento ir&aacute; transitar e outra maior que ficar&aacute; isolada.<br/>
+
+                              Este pequeno   est&ocirc;mago &eacute; ent&atilde;o ligado ao intestino para que o alimento possa seguir seu curso   natural. <br/>
+                              Todas as secre&ccedil;&otilde;es do est&ocirc;mago separado ser&atilde;o levadas a uma nova   costura do intestino feita adiante do intestino que &eacute; costurado no   est&ocirc;mago.<br/>
+                              Esta t&eacute;cnica al&eacute;m de limitar o volume do que entra tamb&eacute;m limita a   velocidade de esvaziamento do est&ocirc;mago pois &eacute; aplicada uma banda de   conten&ccedil;&atilde;o.</p>
+<br/>
+                            <p align="justify">Outra t&eacute;cnica mista &eacute; o<b> bypass g&aacute;strico sem banda ou cirurgia de   Wittgrove</b>, &eacute; muito semelhante &agrave; t&eacute;cnica de Fobi-Capella. A diferen&ccedil;a   b&aacute;sica &eacute; que ao inv&eacute;s de colocar um anel ao redor do "pequeno est&ocirc;mago" , o   cirurgi&atilde;o faz uma costura apertada entre este &uacute;ltimo e o intestino. <br/>
+
+                                <br/>
+                              &Eacute;   necess&aacute;rio abrir o abdome para realizar estas opera&ccedil;&otilde;es?</p>
+<br/>
+                            <p align="justify">N&atilde;o, atualmente cirurgias para obesidade s&atilde;o realizadas por   videolaparoscopia.Ela &eacute; realizada atrav&eacute;s de 6 ou 7 orif&iacute;cios, pequenos cortes   no abd&ocirc;men. </p>
+<br/>
+                            <p align="justify">As principais vantagens desta via de acesso s&atilde;o que: (a) n&atilde;o h&aacute; risco de   desenvolver h&eacute;rnia no corte cir&uacute;rgico;(b) n&atilde;o h&aacute; risco de complica&ccedil;&otilde;es da   incis&atilde;o cir&uacute;rgica no p&oacute;s-operat&oacute;rio como infec&ccedil;&atilde;o ou seroma (quando gordura   liquefeita se junta embaixo da pele sob o corte); (c) esteticamente deixa menos   cicatriz e (d) o tempo de retorno &agrave;s atividades &eacute; mais curto. </p>
+<br/>
+                            <p align="justify">Somente em algumas situa&ccedil;&otilde;es especiais n&atilde;o &eacute; poss&iacute;vel realizar a cirurgia por   via laparosc&oacute;pica, como em pessoas que foram submetidas &agrave; cirurgias abdominais   pr&eacute;vias. </p>
+<br/>
+                            <p align="justify">Algumas vezes durante a cirurgia laparosc&oacute;pica, surgem situa&ccedil;&otilde;es que exigem   que o cirurgi&atilde;o converta a cirurgia para um procedimento aberto . Esta decis&atilde;o &eacute;   baseada em seguran&ccedil;a e s&oacute; pode ser feita durante o ato operat&oacute;rio.</p>
+<br/>
+                            <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>                          
+
+                            <p align="justify">&nbsp;</p>
+<br/>
+                            <p align="center"><a id="anestesiologia" class="style3">Considerações sobre a anestesia para cirurgia de obesidade mórbida</a></p>
+<br/>
+                            <p align="justify">Uma das maiores preocupa&ccedil;&otilde;es dos pacientes que desejam submeter-se &agrave;   cir&uacute;rgica de obesidade m&oacute;rbida &eacute; a anestesia. Procuraremos esclarecer alguns   pontos que geram duvidas freq&uuml;entes.<br/>
+<br/>
+                                <b>Consulta Pr&eacute;   Anest&eacute;sica</b>: &Eacute; realizada uma semana antes da cir&uacute;rgica para conhecer o   paciente, rever seus exames e a avalia&ccedil;&atilde;o clinica j&aacute; feita, para detectar as   caracter&iacute;sticas de cada um com a finalidade de prevenir e corrigir qualquer   problema que possa surgir durante o ato operat&oacute;rio. Esta consulta pr&eacute;via   possibilita conhecer passado de alergia, patologias associadas, hist&oacute;rico de   outras anestesias e cirurgias pelas quais o paciente j&aacute; se submeteu. Permite que   o paciente conhe&ccedil;a o m&eacute;dico que vai anestesi&aacute;-lo e tirar as duvidas e os medos   mais comuns. <br/>
+<br/>
+                              <b>Fases da Anestesia</b>: A anestesia   divide-se em tr&ecirc;s fases: indu&ccedil;&atilde;o anest&eacute;sica, trans-operat&oacute;rio&nbsp; e recupera&ccedil;&atilde;o   p&oacute;s-anest&eacute;sica.</p>
+<br/>
+                            <p align="justify">1.&nbsp;<b>Indu&ccedil;&atilde;o anest&eacute;sica</b> &eacute; a fase que o paciente vai   receber os primeiros medicamentos para o in&iacute;cio da cirurgia. J&aacute; dentro do Centro   Cir&uacute;rgico, o m&eacute;dico punciona uma veia do bra&ccedil;o e s&atilde;o ligados todos os aparelhos   que ir&atilde;o controlar os par&acirc;metros vitais do paciente (pulsa&ccedil;&atilde;o, press&atilde;o arterial,   respira&ccedil;&atilde;o, concentra&ccedil;&atilde;o de oxig&ecirc;nio e g&aacute;s carb&ocirc;nico no sangue e outros). &Eacute;   administrado oxig&ecirc;nio sob m&aacute;scara e na veia puncionada aplica-se medicamentos   que far&atilde;o o paciente dormir. A seguir ocorre a entuba&ccedil;&atilde;o oro-traqueal que   consiste na introdu&ccedil;&atilde;o de um tubo pl&aacute;stico na traqu&eacute;ia do paciente, o qual ser&aacute;   conectado ao aparelho de anestesia. Por este tubo o paciente respira e recebe os   gases anest&eacute;sicos durante a cirurgia. <br/>
+
+                              <br/>
+                              2.&nbsp;<b>Fase   trans-operat&oacute;ria</b> &ndash; nesta o paciente mant&eacute;m-se anestesiado recebendo um   fluxo constante de g&aacute;s anest&eacute;sico e oxig&ecirc;nio ou ar. A quantidade de g&aacute;s recebida   pelo paciente &eacute; determinada pelo anestesista e mantida atrav&eacute;s do aparelho de   anestesia &ldquo;carrinho de anestesia&rdquo;. Atrav&eacute;s do computador do carrinho a mistura   de oxig&ecirc;nio, ar e anest&eacute;sico &eacute; mantida constante. O anestesista continua   acompanhando os sinais vitais do paciente mantendo sua anestesia em um plano   adequado para o cirurgi&atilde;o operar, assim como a hidrata&ccedil;&atilde;o do paciente. Nesta   fase administra-se quantidades de soro adequadas para manter a press&atilde;o arterial   e para o perfeito funcionamento dos rins. Por esta raz&atilde;o muitos pacientes   costumam urinar bastante no p&oacute;s operat&oacute;rio.<br/>
+
+                              <br/>
+                              3.&nbsp;<b>Recupera&ccedil;&atilde;o p&oacute;s   anest&eacute;sica</b> &ndash; &eacute; a fase de despertar do paciente ap&oacute;s a cirurgia. A   inala&ccedil;&atilde;o dos gases anest&eacute;sicos &eacute; suspensa e inicia-se a fase de recupera&ccedil;&atilde;o. O   tempo que o paciente leva para acordar &eacute; muito variado, no entanto sabe-se que   em pacientes obesos h&aacute; a tend&ecirc;ncia do anest&eacute;sico depositar-se no tecido   gorduroso, retardando o despertar. A recupera&ccedil;&atilde;o pode ocorrer na Sala de   Recupera&ccedil;&atilde;o do Centro Cir&uacute;rgico ou na UTI. O anestesista e o cirurgi&atilde;o decidem   qual ser&aacute; o local mais adequado para cada caso.<br/>
+
+                              <br/>
+                              &Eacute; importante finalizar   dizendo que toda anestesia traz um risco pr&oacute;prio. H&aacute; avan&ccedil;os significativos no   que se refere a controles e novas drogas mais seguras, por&eacute;m o fator de risco   mais importante &eacute; a condi&ccedil;&atilde;o clinica pr&eacute;via de cada um. Por esta raz&atilde;o &eacute; que a   &ecirc;nfase nos exames pr&eacute;-operat&oacute;rios e condi&ccedil;&otilde;es cl&iacute;nicas s&atilde;o t&atilde;o ressaltadas. <br/>
+<br/>
+                              Anestesiar o paciente com obesidade m&oacute;rbida tem algumas   particularidades que o anestesista mais experiente pode contornar.</p>
+<br/>
+                              <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>
+<br/>
+                            <p align="justify">&nbsp;</p>
+                            <p align="center"><a id="cirurgia_plastica" class="style3">Cirurgia Plástica</a></p>
+<br/>
+                            <p align="justify"><b>Quando se deve fazer as Cirurgia Pl&aacute;sticas ap&oacute;s a Cirurgia Bari&aacute;trica   ?</b><br/>
+                            As Cirurgias Pl&aacute;sticas devem ser feitas quando o objetivo da perda de peso   estipulada pelo seu Cirurgi&atilde;o Bari&aacute;trico for atingido ou quando ocorreu a   estabiliza&ccedil;&atilde;o do peso. 
+  Ainda assim, o Cirurgi&atilde;o Pl&aacute;stico deve selecionar os   pacientes que estejam com IMC abaixo de 30; acima de 30, somente se houverem   raz&otilde;es fortes. 
+  A estabiliza&ccedil;&atilde;o do peso ocorre geralmente entre 01 e 02 anos   ap&oacute;s a Cirurgia Bari&aacute;trica. 
+  Alguns casos podem necessitar de Cirurgia   Pl&aacute;stica muito antes da estabiliza&ccedil;&atilde;o, quando a sobra de pele e excesso   gorduroso prejudicam em muito a sua locomo&ccedil;&atilde;o.</p>
+<br/>
+                            <p align="justify"><b>Quais as cirurgias Pl&aacute;sticas mais realizadas ap&oacute;s o emagrecimento   acentuado ?</b><br/>
+                            Mamas, abdome, bra&ccedil;os, coxas e face.</p>
+<br/>
+                            <p align="justify"><b>Qual &eacute; a melhor ordem a ser seguida ?</b><br/>
+                            Para a maioria dos Cirurgi&otilde;es Pl&aacute;sticos que esta habituada a fazer esse tipo   de Cirurgia Pl&aacute;stica, o abdome deve ser a primeira cirurgia. A seguir, mamas,   bra&ccedil;os, coxas e face. 
+  As vezes a ordem pode ser mudada de acordo com a   vontade do paciente, desde que n&atilde;o contrarie frontalmente a l&oacute;gica.</p>
+<br/>
+                            <p align="justify"><b>Podem ser realizadas mais de 01 cirurgia por vez ?</b><br/>
+                            As cirurgias associadas (por ex: mamas + abdome ou bra&ccedil;os + coxas, etc.)   devem ser feitas por um cirurgi&atilde;o muito experiente e, mesmo assim, n&atilde;o &eacute; regra   geral, ele poder&aacute; optar por cirurgias isoladas para maior seguran&ccedil;a.</p>
+<br/>
+                            <p align="justify"><b>As cicatrizes s&atilde;o de boa qualidade ?<br/>
+                            </b>Sim. Em geral s&atilde;o de boa qualidade, mas como o contorno corporal a ser   atingido com as Cirurgias Pl&aacute;sticas dependem muitas vezes de tens&otilde;es maiores,   poderemos ter em alguns pontos, cicatrizes hipertr&oacute;ficas (alargadas), que   poder&atilde;o ser retocadas na etapa seguinte. 
+                              Cirurgi&otilde;es Pl&aacute;sticos experientes   conseguem um bom contorno corporal e cicatrizes (mesmo que alarguem um pouco)   que n&atilde;o significam nem 10% do problema apresentado (flacidez e   lipodistrofia).</p>
+<br/>
+                            <p align="justify"><b>Qual o risco da Cirurgia Pl&aacute;stica ap&oacute;s a Cirurgia Bari&aacute;trica   ?</b><br/>
+
+                            O risco de complica&ccedil;&atilde;o grave &eacute; m&iacute;nimo, pois os pacientes est&atilde;o muito bem   preparados (j&aacute; v&ecirc;m bem preparados pela equipe multidisciplinar ligada a Cirurgia   Bari&aacute;trica), e os cuidados com o pr&eacute; operat&oacute;rio imediato e intra-operat&oacute;rio se   somam para dar seguran&ccedil;a &agrave; Cirurgia Pl&aacute;stica. 
+  A anestesia feita por   profissionais competentes habituados a atuar nas gastroplastias, os aparelhos   modernos e drogas de &uacute;ltima gera&ccedil;&atilde;o, nos d&atilde;o a certeza de que devemos nos   preocupar apenas com a cirurgia, sendo nossa dedica&ccedil;&atilde;o muito maior naquilo que   mais nos interessa.</p>
+<br/>
+                            <p align="justify"><b>Como &eacute; o p&oacute;s-operat&oacute;rio ?</b><br/>
+                            Para cada problema e resolu&ccedil;&atilde;o cir&uacute;rgica, um determinado   p&oacute;s-operat&oacute;rio. 
+  De uma maneira geral a primeira semana &eacute; a mais importante,   pois poderemos evitar&nbsp;&nbsp;&nbsp; hemorragias, infec&ccedil;&otilde;es, necroses e edemas, simplesmente   com um repouso relativo e curativos adequados. 
+  Alguns cirurgi&otilde;es n&atilde;o fazem   uso de drenos, outros usam pequenos drenos (penrose) que s&atilde;o retirados 24 a 48   horas ap&oacute;s a cirurgia, e ainda existem cirurgi&otilde;es pl&aacute;sticos que preferem deixar   drenos por 07 a 10 dias, principalmente ap&oacute;s abdominoplastias. 
+  Ap&oacute;s a   primeira semana tudo &eacute; mais f&aacute;cil, mesmo assim o repouso ainda &eacute; importante para   evitar a forma&ccedil;&atilde;o de seroma abundante (liquido formado por extravasamento   linf&aacute;tico e tecido gorduroso liquefeito). O seroma detectado deve ser puncionado   e assim n&atilde;o acarretara problemas. 
+  Ap&oacute;s 01 m&ecirc;s h&aacute; a libera&ccedil;&atilde;o para caminhadas,   dirigir, trabalhar (depende do trabalho), para alguns exerc&iacute;cios f&iacute;sicos e at&eacute;   para rela&ccedil;&otilde;es sexuais desde que sejam bem orientados. 
+  At&eacute; os 03 meses   recomendamos o uso de cintas e faixas pois o alargamento de cicatrizes ainda   pode ocorrer. Protetores solares de 50 para cima devem ser utilizados sob os   biqu&iacute;nis, sungas, camisetas, at&eacute; o clareamento das cicatrizes que ocorre   geralmente por volta dos 06 meses.</p>
+
+                            <p><br/>
+                                <b></b></p>
+<br/>
+                            <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>    
+<br/>
+                           <p align="justify">&nbsp;</p>
+<br/>
+                            <p align="center"><a id="educacao_fisica" class="style3">Educação Física</a></p>
+<br/>
+                             <p align="justify"><b>Devo praticar alguma atividade f&iacute;sica antes de fazer a Cirurgia   Bari&aacute;trica ?</b><br/>
+                              Sim. Entretanto &eacute; recomendado levar em considera&ccedil;&atilde;o o tipo de cirurgia a ser   realizada, seu IMC atual e poss&iacute;veis restri&ccedil;&otilde;es m&eacute;dicas. H&aacute; casos em que a   cirurgia s&oacute; pode ser realizada ap&oacute;s a perda de alguns quilos. N&atilde;o havendo   restri&ccedil;&otilde;es importantes, recomendamos atividades na &aacute;gua, como hidrogin&aacute;stica e   nata&ccedil;&atilde;o, j&aacute; que a sobrecarga &eacute; menor, diminuindo o risco de les&otilde;es. Caminhadas   tamb&eacute;m s&atilde;o bem-vindas, cada um no seu limite. </p>
+<br/>
+                             <p align="justify"><b>Quanto tempo ap&oacute;s a Cirurgia Bari&aacute;trica devo voltar a praticar   atividades f&iacute;sicas ?</b><br/>
+                              O mais breve poss&iacute;vel. Na primeira etapa, p&oacute;s-cirurgia, as atividades devem   ser monitoradas pelo Fisioterapeuta pelo menos por 30 dias, j&aacute; que estas &agrave;s   vezes come&ccedil;am ainda no hospital. Caminhadas progressivas e exerc&iacute;cios   espec&iacute;ficos s&atilde;o orientados caso a caso. Normalmente ap&oacute;s 40 dias j&aacute; se pode   realizar a maioria das atividades, salvo restri&ccedil;&otilde;es m&eacute;dicas. &Eacute; importante   definir os objetivos de cada paciente, suas expectativas em rela&ccedil;&atilde;o ao peso   desejado, definindo estrat&eacute;gias para elaborar um programa em rela&ccedil;&atilde;o aos tipos   de atividades, intensidade, periodicidade e dura&ccedil;&atilde;o, de acordo com as   possibilidades de cada um.</p>
+<br/>
+                             <p align="justify"><b>Ap&oacute;s a cirurgia, quais as atividades mais recomendadas e com qual   freq&uuml;&ecirc;ncia devo realiz&aacute;-las ?</b><br/>
+                               Tudo come&ccedil;a pelo primeiro passo, da caminhada. Progressivamente aumentando,   tanto o volume (tempo) quanto a intensidade (velocidade), a caminhada d&aacute; base   para as demais atividades. Ainda mais&nbsp; que&nbsp; a&nbsp; maioria dos rec&eacute;m-operados n&atilde;o   v&ecirc;m de uma rotina muito ativa e muitos ainda n&atilde;o usufruem de um sistema   cardiovascular e pulmonar privilegiados por tais pr&aacute;ticas. Mas nem s&oacute; de   caminhada se beneficia o organismo humano. Exerc&iacute;cios coordenados, aer&oacute;bios ou   n&atilde;o, s&atilde;o fundamentais na composi&ccedil;&atilde;o do programa de treinamento f&iacute;sico, de acordo   com os objetivos e condi&ccedil;&otilde;es f&iacute;sicas de cada paciente. A qualidade do   emagrecimento est&aacute; pautada na nutri&ccedil;&atilde;o e nas atividades f&iacute;sicas, pois s&atilde;o os   dois &iacute;tens que amplamente norteiam a perda de peso. 
+  Atividades aqu&aacute;ticas,   como hidrogin&aacute;stica e condicionamento f&iacute;sico, tamb&eacute;m na &aacute;gua, podem trazer   excelentes resultados, tanto na diminui&ccedil;&atilde;o do peso quanto na qualidade do   emagrecimento.&nbsp;De tr&ecirc;s a cinco vezes por semana. Isto &eacute; suficiente n&atilde;o s&oacute;   para continuar emagrecendo, mas tamb&eacute;m para se manter saud&aacute;vel sempre. </p>
+<br/>
+                             <p align="justify"><b>Fiz a Cirurgia Bari&aacute;trica e estou perdendo peso. Estou perdendo s&oacute;   gordura ou m&uacute;sculo tamb&eacute;m ?</b><br/>
+                               Com uma redu&ccedil;&atilde;o de peso acentuada p&oacute;s-cirurgia, somada &agrave; pequena ingest&atilde;o de   alimentos e restri&ccedil;&atilde;o de alguns exerc&iacute;cios com peso, &eacute;&nbsp; quase&nbsp; inevit&aacute;vel alguma   perda de massa muscular, principalmente nos dois primeiros meses ap&oacute;s a   cirurgia.&nbsp; Isto pode ser minimizado com uma alimenta&ccedil;&atilde;o rica em prote&iacute;nas e a   introdu&ccedil;&atilde;o progressiva de exerc&iacute;cios resistidos, muscula&ccedil;&atilde;o e gin&aacute;stica   localizada. Avalia&ccedil;&otilde;es som&aacute;ticas, que medem a composi&ccedil;&atilde;o corporal, s&atilde;o   fundamentais no acompanhamento da perda de peso, t&atilde;o acentuada nestes   casos. 
+  Percebe-se, claramente, bons resultados na melhoria do condicionamento   muscular ap&oacute;s o d&eacute;cimo m&ecirc;s da cirurgia, onde o aporte cal&oacute;rico e a melhoria da   absor&ccedil;&atilde;o dos nutrientes propiciam melhora nas fibras musculares. Ap&oacute;s o primeiro   ano os resultados s&atilde;o muito mais percept&iacute;veis. </p>
+<br/>
+                             <p align="justify"><b>Quais atividades f&iacute;sicas s&atilde;o indicadas no p&oacute;s-cir&uacute;rgico de longo   prazo ?</b><br/>
+                               Depende fundamentalmente dos objetivos de cada indiv&iacute;duo. Por&eacute;m, deve-se   levar em conta algumas caracter&iacute;sticas pessoais, tais como sexo, idade, estatura   e peso, al&eacute;m da&nbsp; pr&oacute;pria composi&ccedil;&atilde;o corporal, claro. 
+  Considerando que este   paciente estar&aacute; com um corpo bem diferente de antes da Cirurgia Bari&aacute;trica, um   planejamento deve ser feito na sua totalidade, composto por exerc&iacute;cios aer&oacute;bios,   alongamentos, exerc&iacute;cios de flexibilidade e, com certa freq&uuml;&ecirc;ncia, exerc&iacute;cios   com sobrecarga, que promovam hipertrofia muscular. Avalia&ccedil;&otilde;es peri&oacute;dicas s&atilde;o   fundamentais para uma evolu&ccedil;&atilde;o saud&aacute;vel no programa de   treinamento. 
+  Atividades aer&oacute;bias, como caminhadas, bike, nata&ccedil;&atilde;o e   hidrogin&aacute;stica s&atilde;o fundamentais, mas n&atilde;o bastam.  
+  Devemos analisar as   atividades f&iacute;sicas sob dois aspectos. No primeiro, como apoio para alcan&ccedil;ar seus   objetivos e dar qualidade no processo de redu&ccedil;&atilde;o de peso. No segundo, como forma   de manter uma vida saud&aacute;vel, tornando-se fisicamente mais ativo, contribuindo   fundamentalmente na manuten&ccedil;&atilde;o do peso. Neste aspecto, tendo o praticante   condi&ccedil;&otilde;es f&iacute;sicas, deve ent&atilde;o escolher uma atividade mais prazerosa, mantendo   assim a motiva&ccedil;&atilde;o para realiz&aacute;-la.</p>
+<br/>
+                             <p align="justify"><b>Onde devo realizar tais&nbsp; atividades f&iacute;sicas ?</b><br/>
+                              As op&ccedil;&otilde;es s&atilde;o v&aacute;rias, por&eacute;m devemos levar em considera&ccedil;&atilde;o que a Cirurgia   Bari&aacute;trica &eacute; um procedimento especial, com caracter&iacute;sticas pr&oacute;prias.   Profissionais com conhecimento do tema, principalmente nas repercuss&otilde;es f&iacute;sicas   da cirurgia, bem como da evolu&ccedil;&atilde;o que se segue, devem orientar as atividades   para maior seguran&ccedil;a e melhor aproveitamento do programa, que pode ser realizado   tanto em centros apropriados, como academias e/ou clubes, quanto em ambientes   abertos como parques naturais, respeitando sempre as caracter&iacute;sticas e limites   individuais.</p>
+<br/>
+                             <p align="justify"><b>Ap&oacute;s realizar a Cirurgia Bari&aacute;trica, at&eacute; quando devo continuar com o   programa de atividades f&iacute;sicas ?</b><br/>
+                              Para sempre!!&nbsp; Mesmo que voc&ecirc; adquiriu o corpo dos seus sonhos, a manuten&ccedil;&atilde;o   demanda disciplina e tem que ser permanente. Manter-se ativo fisicamente &eacute;   condi&ccedil;&atilde;o essencial para qualquer pessoa melhorar sua qualidade de vida em   rela&ccedil;&atilde;o &agrave; sa&uacute;de, independentemente de ter sido submetido &agrave; Cirurgia Bari&aacute;trica.   Especificamente neste caso, deve-se levar em considera&ccedil;&atilde;o que nenhum paciente   est&aacute; imune ao aumento do peso. Manter-se engajado num programa de atividades   f&iacute;sicas, vai contribuir decisivamente n&atilde;o s&oacute; na manuten&ccedil;&atilde;o do peso, como tamb&eacute;m   para uma vida mais saud&aacute;vel. </p>
+<br/>
+                             <p align="justify"><b>Razões para exercitar-se </b>- Escrito por Riciéri Maestá - CREF 035599-G/SP<br/>
+                                A ades&atilde;o &agrave; pr&aacute;tica regular de um determinado   exerc&iacute;cio f&iacute;sico n&atilde;o deve ser justificada apenas por um benef&iacute;cio espec&iacute;fico,   como caminhar para emagrecer, por exemplo. 
+                                Tal afirma&ccedil;&atilde;o se   justifica pela gama de benef&iacute;cios que atinge a maioria das fun&ccedil;&otilde;es fisiol&oacute;gicas   do corpo humano, onde mais de quarenta   altera&ccedil;&otilde;es positivas acontecem concomitantemente. 
+                                No tocante &agrave;   obesidade, podemos ressaltar este fato como bom motivo para se praticar alguma   atividade f&iacute;sica, pois a simples caminhada beneficia v&aacute;rias fun&ccedil;&otilde;es no   organismo. Por outro lado, a obesidade por si s&oacute; desencadeia uma s&eacute;rie de   traumas ao paciente, como hipertens&atilde;o e diabetes, sem falar da depress&atilde;o, entre   outros. Compreender as mudan&ccedil;as fisiol&oacute;gicas e morfol&oacute;gicas provocadas   pelo emagrecimento &eacute; t&atilde;o importante quanto compreender a raz&atilde;o que motiva   pr&oacute;prio emagrecimento.
+                                Como para cada paciente obeso podem haver v&aacute;rios   diagn&oacute;sticos diferentes, visto que as causas da obesidade s&atilde;o m&uacute;ltiplas, a   prescri&ccedil;&atilde;o de exerc&iacute;cios f&iacute;sicos deve ser o mais personalizado poss&iacute;vel, pois o   geral pode provocar efeitos contr&aacute;rios aos objetivos isolados.
+                                Diferente   dos meios farmacol&oacute;gicos adotados para remediar ou curar doen&ccedil;as, onde   normalmente para cada problema &eacute; adotado um medicamento espec&iacute;fico, na pr&aacute;tica   de exerc&iacute;cios f&iacute;sicos s&atilde;o adquiridos v&aacute;rios benef&iacute;cios (quando se caminha, por   exemplo).
+                                Os dados abaixo demonstram isso:<br/>
+                                
+                                <br/>
+                                Benef&iacute;cios da pr&aacute;tica de atividade f&iacute;sica regular &nbsp;<br/>
+                                <br/>
+                                Aumenta:<br/>
+                                <br/>
+                                - HDL (Colesterol   bom)<br/>
+
+                                - Densidade &oacute;ssea (massa &oacute;ssea)<br/>
+                                - VO2 m&aacute;x (volume de oxig&ecirc;nio sangu&iacute;neo)<br/>
+                                - Resist&ecirc;ncia &agrave; fadiga<br/>
+
+                                - Capacidade de concentra&ccedil;&atilde;o<br/>
+                                -   Humor<br/>
+                                - Desempenho sexual<br/>
+                                - Qualidade do sono<br/>
+                                - Resist&ecirc;ncia imunol&oacute;gica<br/>
+
+                                - Produtividade no trabalho<br/>
+                                - For&ccedil;a e resist&ecirc;ncia muscular<br/>
+                                - Massa muscular<br/>
+                                &nbsp; <br/>
+                                Diminui:<br/>
+
+                                <br/>
+                                - LDL (colesterol ruim)<br/>
+                                - Triglic&eacute;rides<br/>
+                                - Risco de acidentes coronarianos fatais<br/>
+                                -   Ansiedade<br/>
+                                - N&iacute;veis press&oacute;ricos  (press&atilde;o arterial)<br/>
+
+                                - Taxa glic&ecirc;mica   (glicemia)<br/>
+                                - Gordura corporal<br/>
+                                - Batimentos card&iacute;acos (em repouso e esfor&ccedil;o)<br/>
+                                - Ansiedade<br/>
+                                - Tempo de cicatriza&ccedil;&atilde;o (recentemente comprovado cientificamente)<br/>
+
+                                - Depress&atilde;o<br/>
+                                - Flacidez<br/>
+                                <br/>
+                                N&atilde;o se esque&ccedil;a: fa&ccedil;a uma   avalia&ccedil;&atilde;o f&iacute;sica completa antes de iniciar qualquer atividade f&iacute;sica. Consulte   sempre um profissional.<br/>
+
+                             </p>
+                             <p align="right"><a href="#topo" class="style1">Voltar ao menu</a></p>    
+
+
+
+
+                           <p align="justify">&nbsp;</p>
+
+
+{% endblock %}

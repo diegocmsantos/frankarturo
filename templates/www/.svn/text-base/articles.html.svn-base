@@ -1,0 +1,7 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}articles{% endblock %}
+{% block content %}
+    <ul>
+    </ul>
+{% endblock %}

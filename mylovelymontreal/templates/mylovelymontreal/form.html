@@ -1,0 +1,43 @@
+{% load i18n %}
+
+<h2 class="ticket-form-header">{% trans "Open an request" %}</h2>
+<a href="#" class="jqmClose close-button"><img src="{{MEDIA_URL}}mylovelymontreal/img/close_button.png"/></a>
+
+<form enctype="multipart/form-data" action="{% url mylovelymontreal_submit %}" method="post" class="ticket-form" >
+    <div>
+        {{form.type.label_tag}}
+        {{form.type}}
+        <img src="{{MEDIA_URL}}mylovelymontreal/img/help_button.png" alt="Type Help" class="help"/>
+        <div class="tooltip">
+            {% trans "Choose request when you need to add or change something. Pick bug when there's likely to be a problem in your website." %}
+        </div>
+    </div>
+    
+    <div>
+        {{form.priority.label_tag}}
+        {{form.priority}}
+        <img src="{{MEDIA_URL}}mylovelymontreal/img/help_button.png" alt="Type Help" class="help"/>
+        <div class="tooltip">
+            {% trans "We ask you to don't misuse this priority selection. This is how we organize ourselves to provide you a great service." %}
+        </div>
+    </div>
+    
+    <div id="priority-description" class="none"></div>
+    
+    <div>
+        {{form.summary.label_tag}}
+        {{form.summary}}
+    </div>
+    
+    <div>
+        {{form.message.label_tag}}
+        {{form.message}}
+    </div>
+    
+    <div>
+        {{form.attachment.label_tag}}
+        {{form.attachment}}
+    </div>
+
+<input type="submit" value="Enviar" class="ticket-submit"/>
+</form>

@@ -1,0 +1,77 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}bmi{% endblock %}
+
+{% block content %}
+<div id="bmi-box">
+{% trans "IMC é o índice de massa corpórea. Isso é um padrão internacional para verificar se o indivíduo está no peso ideal." %}
+</div>
+    <br class="clear"/>
+    <div class="horizontal-divider">&nbsp;</div>
+    <form class='bmi' method="post">
+        <div class="bmi-fields">
+            <div>
+            <label for="id_weight">{% trans "Peso" %}:</label>
+                <input type="text" name="weight" id="id_weight" />
+                {% trans "quilos." %}
+            </div>
+            
+            <div>
+            <label for="id_height">{% trans "Altura" %}:</label>
+                <input type="text" name="height" id="id_height" />
+                {% trans "metros." %}
+            </div>
+        </div>
+            
+        <input id='id_calculate' type='submit' value="{% trans 'Calcular' %}" class="submit" />
+    </form>
+    <br/>
+    <br/>
+    {% if bmi %}
+        <div id="bmi-box" align="center">
+            Fator IMC: {{ bmi|floatformat }}
+        </div>
+        <br/>
+        <div id="bmi-box" align="center">
+        {% if bmi < 25 %}
+                {% trans "Peso Normal" %}
+        {% endif %}
+        
+        {% if bmi >= 25 and bmi < 27 %}
+                {% trans "Sobrepeso" %}
+        {% endif %}
+        
+        {% if bmi >= 27 and bmi < 30 %}
+            {% trans "Obesidade Leve" %}
+        {% endif %}
+        
+        {% if bmi >= 30 and bmi < 35 %}
+            {% trans "Obesidade Moderada" %}
+        {% endif %}
+        
+        {% if bmi >= 35 and bmi < 40 %}
+            {% trans "Obesidade Severa" %}
+        {% endif %}
+        
+        {% if bmi >= 40 and bmi < 50 %}
+            {% trans "Obesidade Mórbida" %}
+        {% endif %}
+        
+        {% if bmi > 50 %}
+                {% trans "Super Obesidade" %}
+        {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block  base_body_end %}
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.alphanumeric.pack.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#id_weight').numeric({allow:"."});
+            $('#id_height').mask("9.99");
+        });
+    </script>
+{% endblock %}

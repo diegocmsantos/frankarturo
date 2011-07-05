@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/87/frankarturo/contact_form
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/87/frankarturo/contact_form/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/87/frankarturo/contact_form/__init__.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/87/frankarturo/contact_form/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/87/frankarturo/contact_form/forms.py
+END

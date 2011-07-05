@@ -1,0 +1,87 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}contact{% endblock body_class %}
+
+{% block content %}
+<ul id="contact-option">
+    <h2>{% trans "Other options" %}</h2>
+        <li>(0xx) 85 3486-6124</li>
+        <li>frank@frankarturo.com.br</li>
+</ul>
+<br class="clear"/>
+<div class="horizontal-divider">&nbsp;</div>
+<div class="left">
+    {% block form %}
+            <p class="none message"></p>
+            <form action="" class="contact" id="contact_form" method="post">
+                <div class="form-half-left">
+                    <div class="form-field">
+
+                        <br/>
+                        <input type="text" name="name" id="id_name" class="required"/>
+                        <br/><br/>
+                    </div>
+                
+                    <div class="form-field">
+
+                        <br/>
+                        <input type="text" name="email" id="id_email" class="required"/>
+                        <br/><br/>
+                    </div>
+                </div>
+                
+                <div class="form-half-right">
+                    <div class="form-field">
+
+                        <br/>
+                        <textarea name="body" id="id_body" cols="75" rows="5"></textarea>
+                    </div>
+                </div>
+                
+                <p>
+                    <input id="id_submit" type="submit" class="submit" value="{% trans 'Submit' %}"/>
+                </p>
+            </form>
+    {% endblock %}
+</div>
+{% endblock %}
+
+{% block body_end %}
+<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-ajax-validation.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#id_name, #id_email, #id_body").defaultvalue(
+        '{% trans "*Your name:" %}',
+        '{% trans "*Your e-mail:" %}',
+        '{% trans "*Your message:" %}'
+    );
+    
+    function submitContact() {
+        var body = $('body').css('cursor', 'progress');
+        var form = $('#contact_form');
+        var values = form.serialize();
+        
+        success = '{% trans "Your message has been successfully sent. Thanks." %}';
+        error = '{% trans "There seems to be a issue with our contact form, We are sorry."%}';
+        
+        $.post('{% url www_contact_form %}', values, function(data) {
+            body.css('cursor', 'default');
+            form.fadeOut('slow');
+            p = $('p.message');
+            if (data == 'true') {
+                p.html(success);
+            } else {
+                p.html(error);
+            }
+            p.show();
+        });
+        
+        return false;
+    }
+   
+    $("#contact_form").validate('{% url contact_form_validate %}', {dom: $("#id_submit"), event: 'click', submitHandler: submitContact});
+    
+});
+</script>
+{% endblock %}

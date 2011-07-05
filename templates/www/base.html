@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block base_extra_head %}
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.defaultvalue.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('h2.accordion').css('cursor', 'pointer');
+            $('div.accordion').css('display', 'none');
+            
+            $('h2.accordion').click(function(){
+                $(this).next('div.accordion').slideToggle("slow");
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block top %}
+    <div class="search">
+    <form method="get" action="http://www.google.com/search">
+        <input type="text" name="q" id="search"/>
+        <input type="hidden" name="sitesearch" value="frankarturo.com.br"/>
+    </form>
+    </div>
+    <br class="clear"/>
+    <ul id="nav">
+        <li id="obesity"><a href="{% url www_obesity %}">{% trans "OBESITY" %}</a></li>
+        <li id="team"><a href="{% url www_team %}">{% trans "EQUIPE" %}</a></li>
+        <li id="bmi"><a href="{% url www_bmi %}">{% trans "CALCULAR IMC" %}</a></li>
+        <li id="gallery"><a href="{% url www_photogallery %}">{% trans "FOTOS" %}</a></li>
+        <li id="articles"><a href="{% url www_articles %}">{% trans "ARTIGOS" %}</a></li>
+        <li id="contact"><a href="{% url contact_form %}">{% trans "CONTATO" %}</a></li>
+    </ul>
+    
+    <div class="divider-vertical">&nbsp;</div>
+    
+{% endblock %}
+
+{% block footer %}
+<div id="footer-wrapper">
+    <ul id="footer-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="{% url contact_form %}">Contato</a></li>
+    </ul>    
+</div>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#search").defaultvalue(
+        '{% trans "SEARCH" %}'
+    );
+});
+</script>
+{% endblock %}
+
+{% block  base_body_end %}
+{% endblock %}

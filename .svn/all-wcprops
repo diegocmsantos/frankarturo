@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/!svn/ver/183/frankarturo
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/86/frankarturo/manage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/86/frankarturo/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/182/frankarturo/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/126/frankarturo/urls.py
+END

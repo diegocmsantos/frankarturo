@@ -1,0 +1,72 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="slider" class="slider">
+    <img src="{{MEDIA_URL}}img/frankarturo.png" height="200px" />
+    <!--<div class="slider-photo"></div>
+    <div class="slider"></div>
+    <div class="slider-text"></div>-->
+    
+</div>
+
+<div class="horizontal-divider">&nbsp;</div>
+
+<div id="featured">
+    <div class="column">
+        <a class="more" href="{% url www_photogallery %}">
+            <h2>Galeria de Fotos</h2>
+        </a>
+        <a class="more" href="{% url www_photogallery %}">
+            <img src="{{MEDIA_URL}}img/regina_amaral.jpg" alt="Testimonial"/>
+        </a>
+        <p>
+            Confira como funciona as cirurgias realizadas pelo Dr. Frank.
+            <br/><br/>
+            <a class="more" href="{% url www_photogallery %}">Ver Mais...</a>
+        </p>
+    </div>
+    
+    <div class="column">
+        <a class="more" href="{% url www_articles %}">
+            <h2>{% trans "Last Articles" %}</h2>
+        </a>
+        <a class="more" href="{% url www_articles %}">
+            <img src="{{MEDIA_URL}}img/last_articles.jpg" alt="{% trans 'Last Articles' %}"/>
+        </a>
+        <ul class="left">
+            {% for article in last_articles %}
+                {% if forloop.counter <= 3 %}
+                    <a href="{{ article.get_absolute_url }}">
+                        <li>{{article.title}}</li>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <ul class="right">
+            {% for article in last_articles %}
+                {% if forloop.counter > 3 %}
+                    <a href="{{ article.get_absolute_url }}">
+                        <li>{{article.title}}</li>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            <li><a class="more" href="{% url www_articles %}">{% trans "And more..." %}</a></li>
+        </ul>
+    </div>
+    
+    <div class="column">
+        <h2>{% trans 'Where are we' %}</h2>
+        <img src="{{MEDIA_URL}}img/where_are_we.jpg" alt="{% trans 'Where are we' %}"/>
+        <p>
+            <b>Harmony Medical Center</b><br/>
+            Avenida Dom Luiz, 1233, Sala 312 - Meireles<br/>
+            Fortaleza - CE, 60160-230, Brasil<br/>
+            Telefone: (85) 3486-6124<br/>
+            Celular: (85) 9136-2422 / 9693-7952<br/>
+            Email: <a href="{% url contact_form %}">frankcasallo@yahoo.com.br</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

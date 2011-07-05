@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/88/frankarturo/annoying
+END
+functions.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/88/frankarturo/annoying/functions.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/88/frankarturo/annoying/__init__.py
+END
+middlewares.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/88/frankarturo/annoying/middlewares.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/88/frankarturo/annoying/utils.py
+END
+exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/88/frankarturo/annoying/exceptions.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/88/frankarturo/annoying/decorators.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/88/frankarturo/annoying/fields.py
+END

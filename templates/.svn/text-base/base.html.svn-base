@@ -1,0 +1,61 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{LANGUAGE_CODE}}" xml:lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{% block meta %}
+{% endblock %}
+
+<link rel="icon" href="favicon.ico" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<title>{% block title %}{% trans "Frank Arturo - Tratamento da Obesidade" %}{% endblock %}</title>
+
+
+<link href="{{MEDIA_URL}}css/reset.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="{{MEDIA_URL}}css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://use.typekit.com/oqt8jzu.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+{% block extra_head %}{% endblock %}
+{% block base_extra_head %}{% endblock %}
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+<div id="top">
+    <div id="top-content">
+        <div id="logo-wrapper">
+            {% block logo %}
+                    <a href="/"><img class="logo" src="{{MEDIA_URL}}img/logo.jpg" alt="Frank Arturo"/></a>
+            {% endblock %}
+        </div>
+        
+        <div id="top-wrapper">
+            {% block top %}{% endblock%}
+        </div>
+        
+    </div>
+</div>
+    
+
+<div id="content">
+{% block notification %}{% endblock %}
+{% block content %}{% endblock %}
+</div>
+
+<br class="clear"/>
+
+<div id="footer">
+{% block footer %}{% endblock %}
+</div>
+
+{% block base_body_end %}
+{% endblock %}
+
+{% block body_end %}
+{% endblock %}
+</body>
+</html>
+

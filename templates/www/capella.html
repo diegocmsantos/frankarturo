@@ -1,0 +1,40 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}photogallery{% endblock %}
+
+{% block extra_head %}
+    <script src="{{ MEDIA_URL }}js/gallery/galleria.js"></script>
+	
+	<style>
+        html,body{background:#FFFF}
+			.content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
+        h1{line-height:1.1;letter-spacing:-1px;}
+        a {color:#fff;}
+        #galleria{height:400px;width:400px}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+		<h1>Cirurgia de Capella</h1>
+		<br/>
+		<div id="galleria">
+			<img src="{{ MEDIA_URL }}img/capella/capella1.png" alt="Pic 1" />
+			<img src="{{ MEDIA_URL }}img/capella/capella2.png" alt="Pic 2" />
+			<img src="{{ MEDIA_URL }}img/capella/capella3.png" alt="Pic 3" />
+			<img src="{{ MEDIA_URL }}img/capella/capella4.png" alt="Pic 4" />
+			<img src="{{ MEDIA_URL }}img/capella/capella5.png" alt="Pic 4" />
+			<img src="{{ MEDIA_URL }}img/capella/capella6.png" alt="Pic 4" />
+			<img src="{{ MEDIA_URL }}img/capella/capella7.png" alt="Pic 4" />
+			<img src="{{ MEDIA_URL }}img/capella/capella8.png" alt="Pic 4" />
+			<img src="{{ MEDIA_URL }}img/capella/capella9.png" alt="Pic 4" />
+		</div>
+	</div>
+	<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../static/js/gallery/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
+{% endblock %}

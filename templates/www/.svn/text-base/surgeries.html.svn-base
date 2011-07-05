@@ -1,0 +1,3 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}surgeries{% endblock %}

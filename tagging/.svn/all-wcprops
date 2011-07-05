@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/119/frankarturo/tagging
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/119/frankarturo/tagging/admin.py
+END
+generic.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/119/frankarturo/tagging/generic.py
+END
+._settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/119/frankarturo/tagging/._settings.py
+END
+managers.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/119/frankarturo/tagging/managers.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/119/frankarturo/tagging/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/119/frankarturo/tagging/__init__.py
+END
+._models.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/119/frankarturo/tagging/._models.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/119/frankarturo/tagging/settings.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/119/frankarturo/tagging/utils.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/119/frankarturo/tagging/models.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/119/frankarturo/tagging/fields.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/119/frankarturo/tagging/forms.py
+END

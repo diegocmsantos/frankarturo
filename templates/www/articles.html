@@ -1,0 +1,21 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}articles{% endblock %}
+{% block content %}
+
+<div id="content">
+		<h1>Artigos</h1>
+        <br/>
+        <br/>
+		<div>
+			<div id="bmi-box">
+                <a href="{% url www_article1 %}">Fazer dieta não reduz número de células de gordura, diz estudo</a>
+            </div>
+            <br/>
+			<div id="bmi-box">
+                <a href="{% url www_article2 %}">Metade da população mundial 'está obesa ou acima do peso'</a>
+            </div>
+		</div>
+	</div>
+
+{% endblock %}

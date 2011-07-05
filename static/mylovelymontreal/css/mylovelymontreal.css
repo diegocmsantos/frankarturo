@@ -1,0 +1,215 @@
+#header {
+    background-color: #333940;
+    border-bottom: solid 3px #999;
+}
+
+#branding h1{
+    color: #fff;
+}
+
+.module h2, .module caption, .inline-group h2 { 
+    background:#DEDEDE url(/admin_media/img/admin/nav-bg.gif) bottom left repeat-x;
+    color: #333940; 
+}
+
+a.section:link, a.section:visited {
+    color: black; 
+}
+
+h1 {
+    color: #4C4C4A;
+}
+
+#content-related .module h2 {
+    color: black;
+}
+
+#footer-wrapper {
+    background: url("../img/footer_bg_admin.png") no-repeat;
+    bottom: 0;
+    height: 27px;
+    position: fixed;
+    right: 37%;
+    width:310px;
+    z-index:99;
+}
+
+#footer {
+    min-width: 1000px;
+    position: relative;
+}
+
+#footer a img.footer-logo {
+	margin: -9px 0 0 15px;
+}
+
+.i-want-wrapper {
+	font:14px/24px arial,helvetica,sans-serif;
+	position:absolute;
+	top:0px;
+	width:80px;
+	z-index:10;
+	margin: 2px 0 0 0;
+	left: 17%;
+}
+
+div#i-want a {
+	color: white;
+}
+
+div#i-want a img {
+	padding: 1px 0 1px 2px;
+}
+
+div#i-want-menu {
+	display:none;
+	background-color: #262626;
+	position: absolute;
+	top: -68px;
+	width: 116px;
+}
+
+div #i-want-menu ul {
+	padding: 2px 5px 0 5px;
+	list-style: none outside none;
+}
+
+div#i-want-menu ul li {
+	padding: 5px 0 5px 0;
+	border-bottom: 1px dotted gray;
+	list-style: none outside none;
+}
+
+div#i-want-menu ul li a{
+	padding: 0 0 0 3px;
+	color: #828486;
+}
+
+div#i-want-menu ul li a:hover {
+	color: white;
+}
+
+.ticket-form {
+	padding: 10px 0 0 0;
+}
+
+.ticket-form label{
+	display: block;
+	padding: 0 0 4px 0;
+}
+
+.ticket-form textarea, .ticket-form input {
+	width: 90%;
+}
+
+.ticket-form input, textarea, select {
+	background: none repeat scroll 0 0 #E4EEDE;
+	border: 1px solid white;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.ticket-form select {
+	width: 45%;
+}
+
+#ticket-form-wrapper h2 {
+	display: inline;
+}
+
+#ticket-form-wrapper a.close-button {
+	float: right;
+}
+
+.ticket-form div#priority-description, .ticket-form ul.errorlist li, .success {
+	font-size: 10px;
+	border: 1px solid;
+	margin: 10px 0;
+	padding: 5px;
+	width: 90%;
+	display: block;
+}
+
+.ticket-form ul.errorlist li {
+	background-image: none;
+}
+
+.ticket-form div {
+	line-height: 140%;
+	padding: 0;
+	margin: 0.2em 0 0.8em;
+}
+
+.ticket-form div img {
+	vertical-align: middle;
+}
+
+.ticket-form div.tooltip {
+	display: none;
+	background-color: #262626;
+    color: #828486;
+    border: 1px solid #828486;
+	padding: 5px;
+	margin-top: 9px;
+	font-size: 10px;
+	width: 38%;
+}
+
+.ticket-form div#priority-description.none {
+	display: none;
+}
+
+div#loading {
+	display: none;
+	left: 50%;
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+}
+
+.blocker, .ticket-form ul.errorlist li {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+
+.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+.critical {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+
+.major {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+
+.minor {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+.trivial {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+
+#ie9 {
+	position: absolute;
+	left: 40%;
+	top: 0;
+	background: url("../img/ie9.png") no-repeat;
+	color: #262626;
+	width: 382px;
+}
+
+#ie9 p {
+	margin-left: 37px;
+	margin-top: 5px;
+	color: #828486;
+	font-size: 12px;
+	font-weight: bold;
+}

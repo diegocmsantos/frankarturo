@@ -1,0 +1,74 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}photogallery{% endblock %}
+
+{% block extra_head %}
+    <script src="{{ MEDIA_URL }}js/gallery/galleria.js"></script>
+	
+	<style>
+        html,body{background:#FFFF}
+			.content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
+        h1{line-height:1.1;letter-spacing:-1px;}
+        a {color:#fff;}
+        #galleria{height:600px;width:600px}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div id="content" align="center">
+        <a href="{% url www_obesity %}">Voltar</a>
+		<h1>Pesquisa da obesidade 2007</h1>
+		<br/>
+		<div id="galleria">
+			<img src="{{ MEDIA_URL }}img/obesity_search/1.png" alt="Pic 1" />
+			<img src="{{ MEDIA_URL }}img/obesity_search/2.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/3.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/4.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/5.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/6.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/7.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/8.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/10.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/11.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/12.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/13.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/14.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/15.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/16.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/17.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/18.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/19.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/20.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/21.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/22.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/23.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/24.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/25.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/26.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/27.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/28.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/29.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/30.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/31.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/32.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/33.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/34.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/35.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/36.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/37.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/38.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/39.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/40.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/41.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/42.png" alt="Pic 1" />
+            <img src="{{ MEDIA_URL }}img/obesity_search/43.png" alt="Pic 1" />
+		</div>
+	</div>
+	<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../static/js/gallery/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
+{% endblock %}

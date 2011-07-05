@@ -1,0 +1,143 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Frank Arturo - admin' %}{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{{MEDIA_URL}}mylovelymontreal/css/mylovelymontreal.css" />
+<link rel="stylesheet" href="{{MEDIA_URL}}mylovelymontreal/css/modal.css" />
+{% endblock %}
+
+{% block extrahead %}
+<meta name="msapplication-task" content="name={% trans 'Add Section' %};action-uri=http://frankarturo.com.br/admin/montcms/section/add/;icon-uri=http://frankarturo.com.br/favicon.ico"/>
+<meta name="msapplication-task" content="name={% trans 'Add Page' %};action-uri=http://frankarturo.com.br/admin/montcms/page/add/;icon-uri=http://frankarturo.com.br/favicon.ico"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Frank Arturo - Admin' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+
+{% block footer %}
+    {% if user.is_authenticated %}
+    <script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}mylovelymontreal/js/jqModal.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}mylovelymontreal/js/jquery-ajax-validation.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}mylovelymontreal/js/jquery.defaultvalue.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(window).scroll(function(){
+            $.each($('#ticket-form-wrapper'), function(){
+                var eloffset = $(this).offset();
+                var windowpos = $(window).scrollTop();
+                if(windowpos<eloffset.top) {
+                    var finaldestination = 0;
+                } else {
+                    var finaldestination = windowpos;
+                }
+                $(this).stop().animate({'top':finaldestination},200);
+            });
+        });
+
+        $('a[rel=external]').click( function() {
+            window.open(this.href, '_blank');
+            return false;
+        });
+        
+         $(".open").hover(
+            function() {
+                $("div#i-want-menu").fadeIn('fast');
+            },
+            function() {
+                $("div#i-want-menu").fadeOut('fast');
+            }
+        ); 
+        
+        var priorityTypes = {
+            '': {text: '', classname: 'none'},
+            'blocker': {text: "{% trans 'This is a real emergency. As soon as you click on the submit button, we will start to fix it.' %}", classname: 'blocker'},
+            'critical' : {text: "{% trans 'This is a very serious issue. Critical, yet is not an emergency. Consider it done in 24 hours.'%}", classname: 'critical'},
+            'major' : {text: "{% trans 'This is a major issue, not critical. Yet, consider it done in 24 hours. '%}", classname: 'major'},
+            'minor' : {text: "{% trans 'This is minor change. 48 hours is our deadline.'%}", classname: 'minor'},
+            'trivial' : {text: "{% trans 'A trivial change, it may take up to 72 hours to be solved.'%}", classname: 'trivial'},
+        }
+       
+       var messageDefault = '{% trans "Please, explain here what you want. If it is a bug type request, please try to tell us the details. The more, the better. Informations like steps to reproduce the problem and what browser (e.g.: IE or Firefox) you are using is essential. If it is a design issue, a screenshot attached would be great."%}'
+       var summaryDefault = '{% trans "A summary of your problem, e.g.: contact form is not working." %}';
+       
+        var ticketFormOnLoad = function(hash) {  
+            desc = $('div#priority-description');
+            $('#id_message').defaultvalue(messageDefault); 
+            $('#id_summary').defaultvalue(summaryDefault);
+            
+            $('#id_priority').change(function() {
+                priority = priorityTypes[$(':selected', this).val()];
+                desc.html(priority.text);
+                desc.removeClass();
+                desc.addClass(priority.classname);
+            });
+            
+            $("form.ticket-form").validate('{% url mylovelymontreal_ticket_validate %}', {dom: $("form.ticket-form"), event: 'submit', submitHandler: function() {
+                form = $('input.ticket-submit').parent();
+                $.post(form.attr('action'), form.serialize(), function(data) {
+                    form.html("<p class=\"success\">{% trans 'Your request has been submited to us. A copy of all information you provided has been emailed to you too. Shortly, we will get in touch, thank you. '%}</p>");
+                });
+                return false;
+            }});
+            
+            $(".help").tooltip({effect: 'fade', relative: true, position: 'center right', offset: [-5, 5]});
+        };
+        
+        $("div#loading").ajaxStart(function() {
+            $(this).show();
+        });
+        
+        $("div#loading").ajaxStop(function() {
+            $(this).hide();
+        });
+        
+        $('#ticket-form-wrapper').jqm({ajax: '{% url mylovelymontreal_form %}', trigger: 'a.open-ticket', onLoad: ticketFormOnLoad, modal: true});
+    });
+    </script>
+    
+    <!--[if gte IE 9]>
+        <div id="ie9">
+            <p>{% trans "Drag the tab and drop it on the taskbar to pin site" %}</p>
+        </div>
+    <![endif]-->
+    
+    
+        <div id="loading">
+            <img src="{{MEDIA_URL}}mylovelymontreal/img/ajax_loader.gif" alt="loading" title="loading"/>
+        </div>
+    
+        <div id="ticket-form-wrapper" class="jqmWindow">
+        </div>
+
+        <div id="footer-wrapper">
+            <div id="footer">
+                <a href="http://montrealconsultoria.com.br/" rel="external">
+                    <img class="footer-logo" alt="Montreal" src="{{MEDIA_URL}}mylovelymontreal/img/logo_admin_montreal.png"/>
+                </a>
+                
+                <div class="i-want-wrapper open">
+                    <div id="i-want">
+                        <a href="#"><img src="{{MEDIA_URL}}mylovelymontreal/img/i_want.png" /></a>
+                    </div>
+                    
+                    <div id="i-want-menu">
+                        <ul>
+                            <li><a href="http://montrealconsultoria.com.br" rel="external">{% trans "meet montreal" %}</a></li>
+                            <li><a href="#" class="open-ticket">{% trans "open a request" %}</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock%}

@@ -1,0 +1,27 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}{{ section.url_name }}{% endblock %}
+
+{% block content %}
+    {% if section.root_is_index %}
+        <h1>{{ section.name }}</h1>
+        <ul class="index">
+            {% for page in index %}
+                <li>
+                    <a href="{{ page.get_absolute_url }}"><h2>{{ page.title }}</h2></a>
+                    <p class="index-timestamp">{{ page.created_at|date:"D d M Y" }}</p>
+                    
+                    <p class="index-content">{{ page.content|truncatewords:20|safe }}</p>
+                </li>
+                <hr/>
+            {% empty %}
+                <li> {% trans "There are no entries." %}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>{{ main.title }}</h2>
+    
+        {{ main.content|safe }}
+    {% endif %}
+{% endblock %}

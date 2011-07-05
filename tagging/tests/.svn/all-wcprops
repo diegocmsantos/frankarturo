@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/119/frankarturo/tagging/tests
+END
+._settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/119/frankarturo/tagging/tests/._settings.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/119/frankarturo/tagging/tests/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/119/frankarturo/tagging/tests/settings.py
+END
+._tags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/119/frankarturo/tagging/tests/._tags.txt
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/119/frankarturo/tagging/tests/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/119/frankarturo/tagging/tests/models.py
+END
+tags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/119/frankarturo/tagging/tests/tags.txt
+END

@@ -1,0 +1,12 @@
+django-reversion==1.2.1
+django-ajax-validation
+django-announcements
+django-debug-toolbar
+django-email-confirmation
+django-extensions
+django-flag
+django-notification
+django-notify
+django-compress
+django-ajax-selects
+django==1.2.5

@@ -1,0 +1,27 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}photogallery{% endblock %}
+
+{% block content %}
+    <div id="content">
+		<h1>Galeria de Fotos</h1>
+        <br/>
+        <br/>
+		<div>
+			<div id="bmi-box">
+                <a href="{% url www_capella %}">Cirurgia de Capella (Gastroplastia)</a>
+            </div>
+            <br/>
+			<div id="bmi-box">
+                <a href="{% url www_sleeve %}">Cirurgia de Gastrectomia Vertical (Sleeve)</a>
+            </div>
+		</div>
+	</div>
+	<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../static/js/gallery/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
+{% endblock %}

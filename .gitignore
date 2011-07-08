@@ -1,0 +1,4 @@
+# Ignorar arquivos específicos
+.DS_Store
+.pyc
+.svn

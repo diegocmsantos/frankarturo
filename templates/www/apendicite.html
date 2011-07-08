@@ -1,0 +1,118 @@
+{% extends "www/base.html" %}
+{% load i18n %}
+
+{% block body_class %}photogallery{% endblock %}
+
+{% block extra_head %}
+	
+	<style type="text/css">
+		p.blocktext {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		img {
+			border: none;
+		}
+		 
+		/* ---------- gallery styles start here ----------------------- */
+		.gallery {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.gallery li {
+			padding: 10px;
+			margin: 0;
+			
+			position: relative;
+			
+		}
+		.gallery li:hover img {
+			border-color: #000;
+		}
+		.gallery img {
+			background: #fff;
+			border: solid 1px #888;
+			padding: 5px;
+			width: 360px;
+			height: 260px;
+		}
+		.gallery em {
+			background: #fff url(images/grey-gradient.gif) repeat-y;
+			color: #000;
+			font-style: normal;
+			padding: 2px 10px;
+			display: block;
+			position: absolute;
+			top: 110px;
+			left: 9px;
+			border: 1px solid #999;
+			border-left-color: #888;
+		}
+		.gallery a {
+			text-decoration: none;
+		}
+		.gallery a:hover em {
+			background: #ffdb01 url(images/orange-gradient.gif) repeat-y;
+			border-color: #c25b08;
+		}
+	</style> 
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+		<h1>Apendicectomia Laparoscópica</h1>
+		<br/>
+		<div>
+			A apendicite aguda é uma doença freqüente
+			que acomete em sua maioria homens com
+			uma idade média ao redor de 20 anos. O
+			seu tratamento é cirúrgico e está bem estabelecido
+			em sua abordagem convencional.
+			O surgimento e o desenvolvimento da videolaparoscopia abriu uma
+			nova opção para a abordagem  cirúrgica dessa
+			patologia, permitindo uma abordagem minimamente
+			invasiva com todas as vantagens dessa técnica.
+		</div>
+		
+		</br>
+		</br>
+		<h1>Cirurgia convencional</h1>
+		</br>
+		<div class="dropshadow1">
+			<p>Veja exemplos de como fica a cicatriz deformadora da cirurgia convencional.</p>
+			<ul class="gallery"> 
+				<li><a href="#"><em>Cicatriz</em><img src="{{ MEDIA_URL }}img/apendicite/apendicite-conv1.jpg" alt="Cicatriz da cirurgia convencional" /></a></li>
+				<li><a href="#"><em>Sequela</em><img src="{{ MEDIA_URL }}img/apendicite/apendicite-conv2.jpg" alt="Cicatriz da cirurgia convencional" /></a></li>
+			</ul>
+		</div>
+		
+		</br>
+		</br>
+		<h1>Inovadora Cirurgia</h1>
+		</br>
+		<div class="dropshadow1">
+			<p>
+				O Dr. Frank utiliza a inovadora técnica de apendicectomia laparoscópica.
+				Veja como o paciente praticamente não apresenta cicatriz.
+			</p>
+			<p>
+				Entre em <a alt="contato" href="/contact/">contato</a> para saber mais detalhes.
+			</p>
+			<ul class="gallery"> 
+				<li><a href="#"><em>No dia da cirurgia</em><img src="{{ MEDIA_URL }}img/apendicite/nova_cirurgia1.jpg" alt="No dia da cirurgia" /></a></li>
+				<li><a href="#"><em>Uma semana depois</em><img src="{{ MEDIA_URL }}img/apendicite/nova_cirurgia2.jpg" alt="Uma semana depois" /></a></li>
+				<li><a href="#"><em>Não aparece vestido</em><img src="{{ MEDIA_URL }}img/apendicite/nova_cirurgia3.jpg" alt="Não aparece vestido" /></a></li>
+			</ul>
+		</div>
+		<div class="blocktext">
+			Marque uma <a alt="contato" href="/contact/">consulta</a> já.
+		</div>
+	</div>
+	<script>
+		// Load the classic theme
+		Galleria.loadTheme('../../static/js/gallery/galleria.classic.js');
+		// Initialize Galleria
+		$('#galleria').galleria();
+    </script>
+{% endblock %}

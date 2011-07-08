@@ -3,7 +3,7 @@ import os
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 ugettext = lambda s: s
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 LANGUAGES = (
@@ -12,7 +12,6 @@ LANGUAGES = (
 )
 
 ADMINS = (
-    #('Nicholas Amorim', 'nicholas@montrealdevelopment.com'),
     ('Diego Maia', 'diegocmsantos@gmail.com'),
     ('Frank', 'frankcasallo@yahoo.com.br'),
 )
@@ -97,13 +96,6 @@ INTERNAL_IPS = ('127.0.0.1', )
 DEBUG_TOOLBAR_CONFIG  = {
     'INTERCEPT_REDIRECTS' : False,
 }
-
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'diegocmsantos@gmail.com'
-EMAIL_HOST_PASSWORD = 'diegoqwe123'
-EMAIL_PORT = 587
-SEND_BROKEN_LINK_EMAILS=True
 
 try:
     from local_settings import *

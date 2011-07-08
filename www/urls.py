@@ -11,9 +11,12 @@ urlpatterns = patterns('www.views',
 urlpatterns += patterns('django.views.generic.simple',
     url(r'^obesity/$', 'direct_to_template', {'template': 'www/obesity.html'}, name="www_obesity"),
     url(r'^team/$', 'direct_to_template', {'template': 'www/team.html'}, name="www_team"),
+    
     url(r'^photogallery/$', 'direct_to_template', {'template' : 'www/photogallery.html'}, name="www_photogallery"),
     url(r'^photogallery/capella$', 'direct_to_template', {'template' : 'www/capella.html'}, name="www_capella"),
     url(r'^photogallery/sleeve/$', 'direct_to_template', {'template' : 'www/sleeve.html'}, name="www_sleeve"),
+    url(r'^photogallery/apendicite/$', 'direct_to_template', {'template' : 'www/apendicite.html'}, name="www_apendicite"),
+    
     url(r'^articles/$', 'direct_to_template', {'template' : 'www/articles.html'}, name="www_articles"),
     url(r'^articles/article1/$', 'direct_to_template', {'template' : 'www/article1.html'}, name="www_article1"),
     url(r'^articles/article2/$', 'direct_to_template', {'template' : 'www/article2.html'}, name="www_article2"),

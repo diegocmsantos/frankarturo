@@ -1,0 +1,34 @@
+{% extends "www/base.html" %}
+
+{% block body_class %}articles{% endblock %}
+{% block content %}
+<h1>Fotos do Dr. Frank</h1>
+<br/>
+<br/>
+
+<p align="justify"><div class="storytext">
+<strong>O congresso da <a href="http://www.ifso.com/">IFSO</a> (International Federation for the Surgery of Obesity
+and Metabolic Disorders) é a mais importante reunião anual dos especialistas
+nesta área da medicina. Este ano, em sua 16ª edição, ele foi realizado em Hamburg,
+Alemanha.</strong>
+</div>
+
+<br />
+<p>
+    Dr. Frank participou buscando a excelência no atendimento a seus pacientes. Marque uma <a alt="contato" href="/contact/">consulta</a> já.
+</p>
+
+</p>
+<br />
+<br />
+
+<ul class="gallery"> 
+    <li>
+        <a href="#">
+        <em style='left: 215px; top: 55px'></em>
+        <img height="500" width="650" src="{{ MEDIA_URL }}img/congresso_alemanha.jpg" alt="Dr. Frank Arturo" /></a>
+    </li>
+</ul>
+
+
+{% endblock %}

@@ -21,6 +21,7 @@ urlpatterns += patterns('django.views.generic.simple',
     url(r'^articles/article1/$', 'direct_to_template', {'template' : 'www/article1.html'}, name="www_article1"),
     url(r'^articles/article2/$', 'direct_to_template', {'template' : 'www/article2.html'}, name="www_article2"),
     url(r'^articles/article3/$', 'direct_to_template', {'template' : 'www/article3.html'}, name="www_article3"),
+    url(r'^articles/article4/$', 'direct_to_template', {'template' : 'www/article4.html'}, name="www_article4"),
     url(r'^articles/obesitysearch/$', 'direct_to_template', {'template' : 'www/obesity_search.html'}, name="www_obesitysearch"),
 )
 
